@@ -18,7 +18,7 @@ Socket::Socket(int32_t sockfd)
 
 Socket::~Socket()
 {
-    //close
+    //close FIXME
 }
 
 void Socket::bind(Endpoint* endpoint)
@@ -39,4 +39,21 @@ int32_t Socket::accept(Endpoint* endpoint)
 int32_t Socket::connect(Endpoint* endpoint)
 {
     return sock_op::connect_ex(m_sockfd, endpoint);
+}
+
+void Socket::setReuseAddr(bool on)
+{
+    int32_t opt = on ? 1 : 0;
+    ::setsockopt(m_sockfd, SOL_SOCKET, SO_REUSEADDR,
+                 &opt, static_cast<socklen_t>(sizeof opt));
+}
+
+bool Socket::isReuseAddr() const
+{
+    int32_t opt;
+    socklen_t len_opt = static_cast<socklen_t>(sizeof opt);
+    ::getsockopt(m_sockfd, SOL_SOCKET, SO_REUSEADDR,
+                 &opt, &len_opt);
+
+    return (opt == 1);
 }

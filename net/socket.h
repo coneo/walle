@@ -30,11 +30,8 @@ public:
 
     int32_t connect(Endpoint* endpoint);
 
-    //void setReuseAddr(bool on);
-    //bool isReuseAddr() const;
-
-    //void setReusePort(bool on);
-    //bool isReusePort() const;
+    void setReuseAddr(bool on);
+    bool isReuseAddr() const;
 
 private:
     int32_t m_sockfd;

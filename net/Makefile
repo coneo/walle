@@ -16,15 +16,15 @@ $(OBJECTS): %.o: %.cpp
 	$(CXX) $(CXX_FLAGS) -c $< -o $@
 
 
-%.d: %.cpp
-	@#set -x ; 
-	@set -e ; \
-	rm -f $@; \
-	$(CXX) -MM $(CXX_FLAGS) $< > $@.$$$$;  \
-	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@;  \
-	rm -f $@.$$$$
+#%.d: %.cpp
+#	@#set -x ; 
+#	@set -e ; \
+#	rm -f $@; \
+#	$(CXX) -MM $(CXX_FLAGS) $< > $@.$$$$;  \
+#	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@;  \
+#	rm -f $@.$$$$
 
--include $(OBJECTS:.o=.d)
+#-include $(OBJECTS:.o=.d)
 
 test:
 	@make -C example;

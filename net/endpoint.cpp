@@ -47,5 +47,5 @@ std::string Endpoint::getIp() const
 
 uint16_t Endpoint::getPort() const
 {
-    return m_addr.sin_port;
+    return ntohs(m_addr.sin_port);
 }

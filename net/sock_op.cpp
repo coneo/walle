@@ -7,9 +7,9 @@
 
 using namespace walle;
 using namespace walle::net;
-using namespace walle::net::sock_op;
+//using namespace walle::net::sock_op;
 
-int32_t create_socket()
+int32_t sock_op::create_socket()
 {
     int32_t sockfd = ::socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (sockfd < 0)
@@ -19,7 +19,7 @@ int32_t create_socket()
     return sockfd;
 }
 
-int32_t bind_ex(int32_t sockfd, const Endpoint& endpoint)
+int32_t sock_op::bind_ex(int32_t sockfd, const Endpoint& endpoint)
 {
     struct sockaddr_in addr = endpoint.getInetAddr();
     int32_t ret = ::bind(sockfd, (struct sockaddr*)&(addr), sizeof(endpoint.getInetAddr())); //FIXME:sockaddr convert
@@ -30,7 +30,7 @@ int32_t bind_ex(int32_t sockfd, const Endpoint& endpoint)
     return ret;
 }
 
-int32_t listen_ex(int32_t sockfd)
+int32_t sock_op::listen_ex(int32_t sockfd)
 {
     int32_t ret = ::listen(sockfd, SOMAXCONN);
     if (ret < 0)
@@ -40,7 +40,7 @@ int32_t listen_ex(int32_t sockfd)
     return ret;
 }
 
-int32_t accept_ex(int32_t sockfd, Endpoint* cliendpoint)
+int32_t sock_op::accept_ex(int32_t sockfd, Endpoint* cliendpoint)
 {
     struct sockaddr_in cliaddr;
     socklen_t addr_len = sizeof (cliaddr);
@@ -56,19 +56,19 @@ int32_t accept_ex(int32_t sockfd, Endpoint* cliendpoint)
     return sock;
 }
 
-int32_t connect_ex(int32_t sockfd, Endpoint* serendpoint)
+int32_t sock_op::connect_ex(int32_t sockfd, Endpoint* srv_endpoint)
 {
-    struct sockaddr_in ser_addr;
+    struct sockaddr_in ser_addr = srv_endpoint->getInetAddr();
     socklen_t addr_len = sizeof (ser_addr);
     int32_t ret = ::connect(sockfd, (sockaddr*)&(ser_addr), addr_len); //FIXME
     if (ret < 0)
     {
-        fprintf(stderr, "socket connect error");
+        fprintf(stderr, "sock_op::socket connect error\n");
     }
     return ret;
 }
 
-void fromIp(const char* ip, struct sockaddr_in* addr)
+void sock_op::fromIp(const char* ip, struct sockaddr_in* addr)
 {
     if (::inet_pton(AF_INET, ip, &addr->sin_addr) <= 0)
     {
@@ -76,7 +76,7 @@ void fromIp(const char* ip, struct sockaddr_in* addr)
     }
 }
 
-void toIp(char* buf, size_t size, const struct sockaddr_in& addr)
+void sock_op::toIp(char* buf, size_t size, const struct sockaddr_in& addr)
 {
-    //::inet_ntop(AF_INET, &addr.sin_addr, buf, static_cast<socklen_t>(size));
+    ::inet_ntop(AF_INET, &addr.sin_addr, buf, static_cast<socklen_t>(size));
 }
