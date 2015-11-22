@@ -3,6 +3,7 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netinet/in.h>
+#include <unistd.h>
 #include <stdio.h>
 
 using namespace walle;
@@ -68,6 +69,12 @@ int32_t sock_op::connect_ex(int32_t sockfd, Endpoint* srv_endpoint)
     return ret;
 }
 
+void sock_op::close_ex(int32_t sockfd)
+{
+    //FIXME int
+    ::close(sockfd);
+}
+
 void sock_op::fromIp(const char* ip, struct sockaddr_in* addr)
 {
     if (::inet_pton(AF_INET, ip, &addr->sin_addr) <= 0)
@@ -79,4 +86,26 @@ void sock_op::fromIp(const char* ip, struct sockaddr_in* addr)
 void sock_op::toIp(char* buf, size_t size, const struct sockaddr_in& addr)
 {
     ::inet_ntop(AF_INET, &addr.sin_addr, buf, static_cast<socklen_t>(size));
+}
+
+int32_t sock_op::send_ex(int32_t sockfd, void* buf, int32_t buflen)
+{
+    int32_t send_len = ::send(sockfd, buf, buflen, MSG_NOSIGNAL);
+    if (send_len == -1)
+    {
+        if(errno == EAGAIN || errno == EWOULDBLOCK)
+            return -1;
+    }
+    return send_len;
+}
+
+int32_t sock_op::recv_ex(int32_t sockfd, void* buf, int32_t buflen)
+{
+    int32_t recv_len = ::recv(sockfd, buf, buflen, 0);
+    if (recv_len == -1)
+    {
+        fprintf(stderr, "recv error");
+    }
+
+    return recv_len;
 }

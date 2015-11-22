@@ -16,7 +16,8 @@ void run_server()
     srv_socket.setReuseAddr(true);
 
     Endpoint endpoint(SERVER_PORT);
-    printf("server info ip:%s,port:%u,reuseAddr:%s\n", endpoint.getIp().c_str(), endpoint.getPort(), srv_socket.isReuseAddr()?"yes":"no");
+    printf("server info ip:%s,port:%u,reuseAddr:%s\n", 
+           endpoint.getIp().c_str(), endpoint.getPort(), srv_socket.isReuseAddr()?"yes":"no");
     srv_socket.bind(&endpoint);
     srv_socket.listen();
 

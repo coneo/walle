@@ -19,6 +19,7 @@ class Endpoint
 {
 public:
     Endpoint();
+    Endpoint(const Endpoint& other);
     Endpoint(uint16_t port);
     Endpoint(const std::string& ip, uint16_t port);
     Endpoint(const struct sockaddr_in& addr);

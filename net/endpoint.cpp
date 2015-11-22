@@ -16,6 +16,11 @@ Endpoint::Endpoint()
     reset_addr();
 }
 
+Endpoint::Endpoint(const Endpoint& other)
+{
+    this->m_addr = other.m_addr;
+}
+
 Endpoint::Endpoint(uint16_t port)
 {
     reset_addr();

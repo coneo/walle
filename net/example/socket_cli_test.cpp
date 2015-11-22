@@ -18,6 +18,9 @@ void run_client()
     printf("server info ip:%s,port:%u\n", endpoint.getIp().c_str(), endpoint.getPort());
     cli_socket.connect(&endpoint);
     printf("connect server success\n");
+
+    char buf[128] = "hello walle";
+    cli_socket.send(buf, sizeof(buf));
 }
 
 int main()
