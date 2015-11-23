@@ -47,7 +47,7 @@ int32_t Socket::connect(Endpoint* endpoint)
     return sock_op::connect_ex(m_sockfd, endpoint);
 }
 
-int32_t Socket::send(void* buf, int32_t bufLen)
+int32_t Socket::send(const void* buf, int32_t bufLen)
 {
     return sock_op::send_ex(m_sockfd, buf, bufLen);
 }
@@ -83,7 +83,7 @@ void Socket::defaultReadCallBack()
         shutdown();
         return ;
     }
-    fprintf(stdout, "read call back: %s,%d \n", buf, len);
+    fprintf(stdout, "read : %s,%d \n", buf, len);
 }
 
 void Socket::setPollReadCallBack(PollCallBack cb)

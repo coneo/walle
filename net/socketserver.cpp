@@ -68,12 +68,17 @@ void SocketServer::acceptCallBack()
 
     fprintf(stdout, "new connection fd%d \n", newfd);
 
+    //FIXME setnonblocking
+
     if (m_poller->add(&(new_con->socket())))
     {
         fprintf(stderr, "can't add client fd to event pool.\n");
         return ;
     }
     new_con->socket().setPollReadCallBack(std::bind(&Socket::defaultReadCallBack, &(new_con->socket())));
+
+    char msg[128] = "this is walle server";
+    new_con->send(msg, sizeof(msg));
 
     return ;
 }

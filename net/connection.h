@@ -14,6 +14,8 @@ public:
 
     Socket& socket() { return m_socket; }
 
+    int32_t send(const void* buf, int32_t len);
+
 private:
     Socket m_socket;
     Endpoint m_endpoint;

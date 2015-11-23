@@ -4,7 +4,7 @@ CXX_FLAGS= -std=c++11 -g -fPIC
 CXX_LIBS = $(CXX_DEPS) -lpthread -lrt -L../ -lnet
 
 INC = -I ../
-TESTS = socket_srv_test socket_cli_test socketserver_test
+TESTS = client server
 
 all: $(TESTS)
 
@@ -13,9 +13,8 @@ $(TESTS):
 
 test_Logger: test_Logger.cpp ../logger.cpp ../backend_logger.cpp ../log_file.cpp
 
-socket_srv_test: socket_srv_test.cpp ../socket.cpp ../sock_op.h ../sock_op.cpp ../endpoint.cpp
-socket_cli_test: socket_cli_test.cpp ../socket.cpp ../sock_op.h ../sock_op.cpp ../endpoint.cpp
-socketserver_test: socketserver_test.cpp
+client: client.cpp
+server: server.cpp
 
 clean:
 	rm -f $(TESTS)

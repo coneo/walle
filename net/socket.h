@@ -36,7 +36,7 @@ public:
 
     int32_t connect(Endpoint* endpoint);
 
-    int32_t send(void* buf, int32_t bufLen);
+    int32_t send(const void* buf, int32_t bufLen);
 
     int32_t recv(void* buf, int32_t bufLen);
 

@@ -88,7 +88,7 @@ void sock_op::toIp(char* buf, size_t size, const struct sockaddr_in& addr)
     ::inet_ntop(AF_INET, &addr.sin_addr, buf, static_cast<socklen_t>(size));
 }
 
-int32_t sock_op::send_ex(int32_t sockfd, void* buf, int32_t buflen)
+int32_t sock_op::send_ex(int32_t sockfd, const void* buf, int32_t buflen)
 {
     int32_t send_len = ::send(sockfd, buf, buflen, MSG_NOSIGNAL);
     if (send_len == -1)

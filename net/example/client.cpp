@@ -21,6 +21,10 @@ void run_client()
 
     char buf[128] = "hello walle";
     cli_socket.send(buf, sizeof(buf));
+
+    char revbuf[128] = {0};
+    cli_socket.recv(revbuf, sizeof(revbuf));
+    fprintf(stdout, "%s \n", revbuf);
 }
 
 int main()
