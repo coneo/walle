@@ -2,6 +2,7 @@
 #define NET_SOCKET_SERVER_H
 
 #include <map>
+#include "acceptor.h"
 #include "sock_poller.h"
 #include "socket.h"
 
@@ -22,14 +23,11 @@ public:
     void final();
 
 private:
-    void acceptCallBack();
-
-private:
     typedef std::map<int32_t, Connection*> ConnectionMap;
 
     Poller* m_poller = nullptr;
 
-    Socket m_socket;
+    Acceptor m_acceptor;
 
     ConnectionMap m_connections;
 };

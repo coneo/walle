@@ -33,3 +33,6 @@ clean:
 	-rm -f *.o *.d *.d.*
 	-rm $(TARGET)
 	@make clean -C example
+
+ctags:
+	@ctags -R

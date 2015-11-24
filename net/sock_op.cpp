@@ -104,7 +104,7 @@ int32_t sock_op::recv_ex(int32_t sockfd, void* buf, int32_t buflen)
     int32_t recv_len = ::recv(sockfd, buf, buflen, 0);
     if (recv_len == -1)
     {
-        fprintf(stderr, "recv error");
+        fprintf(stderr, "recv error \n");
     }
 
     return recv_len;

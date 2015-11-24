@@ -62,15 +62,18 @@ int Epoller::wait(int max)
         Socket* socket = reinterpret_cast<Socket*>(ev[i].data.ptr);
         if (ev[i].events & EPOLLIN)
         {
-            socket->pollReadCallBack();
+            if (socket->pollReadCallBack)
+                socket->pollReadCallBack();
         }
         if (ev[i].events & EPOLLOUT)
         {
-            socket->pollWriteCallBack();
+            if (socket->pollWriteCallBack)
+                socket->pollWriteCallBack();
         }
         if ((ev[i].events & EPOLLERR) || (ev[i].events & EPOLLHUP))
         {
-            socket->pollErrorCallBack();
+            if (socket->pollErrorCallBack)
+                socket->pollErrorCallBack();
         }
 	}
 

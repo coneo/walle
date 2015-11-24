@@ -1,4 +1,6 @@
 //#include "net.h"
+#include "connector.h"
+#include "connection.h"
 #include "socket.h"
 #include "sock_op.h"
 #include <stdio.h>
@@ -11,6 +13,7 @@ static const uint16_t SERVER_PORT = 9091;
 
 void run_client()
 {
+    /*
     int32_t sock = create_socket();
     Socket cli_socket = Socket(sock);
 
@@ -25,6 +28,23 @@ void run_client()
     char revbuf[128] = {0};
     cli_socket.recv(revbuf, sizeof(revbuf));
     fprintf(stdout, "%s \n", revbuf);
+    */
+
+    Connector cor(SERVER_PORT);
+    Connection* con = cor.connect();
+    if (con)
+    {
+        char buf[128] = "hello walle";
+        con->send(buf, sizeof(buf));
+
+        char revbuf[128] = {0};
+        con->socket().recv(revbuf, sizeof(revbuf));
+
+        con->socket().shutdown();
+
+        delete con;
+    }
+
 }
 
 int main()
