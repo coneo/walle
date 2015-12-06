@@ -49,7 +49,13 @@ int32_t Socket::connect(Endpoint* endpoint)
 
 int32_t Socket::send(const void* buf, int32_t bufLen)
 {
-    return sock_op::send_ex(m_sockfd, buf, bufLen);
+    char real_buf[SocketBuffer::DATA_CHUNK_SIZE] = {0};
+    int32_t real_len = bufLen + SocketBuffer::DATA_HEAD_SIZE;
+    uint32_t& head = *(uint32_t*)real_buf;
+    head = SOCK_HASH_LEN((uint32_t)bufLen, head);
+    memcpy((void*)(real_buf + SocketBuffer::DATA_HEAD_SIZE), (void*)buf, bufLen);
+
+    return sock_op::send_ex(m_sockfd, real_buf, real_len);
 }
 
 int32_t Socket::recv(void* buf, int32_t bufLen)
@@ -76,14 +82,18 @@ bool Socket::isReuseAddr() const
 
 void Socket::defaultReadCallBack()
 {
-    char buf[128] = {0};
+    char buf[SocketBuffer::DATA_CHUNK_SIZE] = {0};
     int32_t len = this->recv(buf, sizeof(buf));
     if (len == 0 || len == -1)
     {
         shutdown();
         return ;
     }
-    fprintf(stdout, "read : %s,%d \n", buf, len);
+    m_recvBuf.write(buf, len);
+
+    char packet[SocketBuffer::DATA_CHUNK_SIZE] = {0};
+    m_recvBuf.read(packet, sizeof(packet));
+    fprintf(stdout, "packet: %s\n", packet);
 }
 
 void Socket::setPollReadCallBack(PollCallBack cb)

@@ -4,6 +4,8 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Acceptor	acceptor.cpp	/^Acceptor::Acceptor()$/;"	f	class:Acceptor
+Acceptor	acceptor.h	/^class Acceptor$/;"	c	namespace:walle::net
 CXX	Makefile	/^CXX = g++$/;"	m
 CXX	example/Makefile	/^CXX = g++$/;"	m
 CXX_DEPS	example/Makefile	/^CXX_DEPS = -DTEST_SERVER$/;"	m
@@ -15,6 +17,8 @@ Connection	connection.h	/^class Connection$/;"	c	namespace:walle::net
 ConnectionMap	socketserver.h	/^    typedef std::map<int32_t, Connection*> ConnectionMap;$/;"	t	class:walle::net::SocketServer
 Connector	connector.cpp	/^Connector::Connector(uint16_t port)$/;"	f	class:Connector
 Connector	connector.h	/^class Connector$/;"	c	namespace:walle::net
+DATA_CHUNK_SIZE	socket_buffer.h	/^    static const uint32_t DATA_CHUNK_SIZE = 64 * 1024;$/;"	m	class:walle::net::SocketBuffer
+DATA_HEAD_SIZE	socket_buffer.h	/^    static const uint32_t DATA_HEAD_SIZE = sizeof(uint32_t);$/;"	m	class:walle::net::SocketBuffer
 Endpoint	endpoint.cpp	/^Endpoint::Endpoint()$/;"	f	class:Endpoint
 Endpoint	endpoint.cpp	/^Endpoint::Endpoint(const Endpoint& other)$/;"	f	class:Endpoint
 Endpoint	endpoint.cpp	/^Endpoint::Endpoint(const std::string& ip, uint16_t port)$/;"	f	class:Endpoint
@@ -27,6 +31,7 @@ EventLoop	eventloop.h	/^class EventLoop$/;"	c	namespace:walle::net
 INC	example/Makefile	/^INC = -I ..\/$/;"	m
 MAX_EVENT	sock_poller.h	9;"	d
 NET_CONNECTION_H	connection.h	2;"	d
+NET_SOCKET_BUFFER_H	socket_buffer.h	2;"	d
 NET_SOCKET_SERVER_H	socketserver.h	2;"	d
 NET_SOCK_EPOLLER_H	sock_epoller.h	2;"	d
 NET_SOCK_POLLER_H	sock_poller.h	2;"	d
@@ -37,9 +42,16 @@ SERVER_PORT	example/client.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v
 SERVER_PORT	example/server.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
 SERVER_PORT	example/socket_srv_test.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
 SERVER_PORT	example/socket_test.cpp	/^static const uint16_t SERVER_PORT = 9090;$/;"	v	file:
+SOCK_BUF_INIT_SIZE	socket_buffer.h	/^    static const uint32_t SOCK_BUF_INIT_SIZE = 1024;$/;"	m	class:walle::net::SocketBuffer
+SOCK_HASH_GET_COMPRESS	socket_buffer.h	20;"	d
+SOCK_HASH_GET_ENC	socket_buffer.h	23;"	d
+SOCK_HASH_GET_LEN	socket_buffer.h	17;"	d
+SOCK_HASH_LEN	socket_buffer.h	26;"	d
 SOURCES	Makefile	/^SOURCES=$(wildcard *.cpp)$/;"	m
 Socket	socket.cpp	/^Socket::Socket(int32_t sockfd)$/;"	f	class:Socket
 Socket	socket.h	/^class Socket$/;"	c	namespace:walle::net
+SocketBuffer	socket_buffer.cpp	/^SocketBuffer::SocketBuffer(uint32_t datasize)$/;"	f	class:SocketBuffer
+SocketBuffer	socket_buffer.h	/^class SocketBuffer$/;"	c	namespace:walle::net
 SocketServer	socketserver.cpp	/^SocketServer::SocketServer()$/;"	f	class:SocketServer
 SocketServer	socketserver.h	/^class SocketServer$/;"	c	namespace:walle::net
 TARGET	Makefile	/^TARGET = libnet.a$/;"	m
@@ -51,8 +63,8 @@ WALLE_NET_EVENTLOOP_H	eventloop.h	10;"	d
 WALLE_NET_NET_H	net.h	3;"	d
 WALLE_NET_SOCKET_H	socket.h	9;"	d
 WALLE_NET_SOCK_OP_H	sock_op.h	9;"	d
+accept	acceptor.cpp	/^void Acceptor::accept()$/;"	f	class:Acceptor
 accept	socket.cpp	/^int32_t Socket::accept(Endpoint* endpoint)$/;"	f	class:Socket
-acceptCallBack	socketserver.cpp	/^void SocketServer::acceptCallBack()$/;"	f	class:SocketServer
 accept_ex	sock_op.cpp	/^int32_t sock_op::accept_ex(int32_t sockfd, Endpoint* cliendpoint)$/;"	f	class:sock_op
 add	sock_epoller.cpp	/^int Epoller::add(Socket* socket)$/;"	f	class:Epoller
 bind	socket.cpp	/^void Socket::bind(Endpoint* endpoint)$/;"	f	class:Socket
@@ -70,26 +82,37 @@ fromIp	sock_op.cpp	/^void sock_op::fromIp(const char* ip, struct sockaddr_in* ad
 getInetAddr	endpoint.h	/^    sockaddr_in getInetAddr() const{ return m_addr; }$/;"	f	class:walle::net::Endpoint
 getIp	endpoint.cpp	/^std::string Endpoint::getIp() const$/;"	f	class:Endpoint
 getPort	endpoint.cpp	/^uint16_t Endpoint::getPort() const$/;"	f	class:Endpoint
+getReadyPack	socket_buffer.cpp	/^int32_t SocketBuffer::getReadyPack()$/;"	f	class:SocketBuffer
+init	acceptor.cpp	/^bool Acceptor::init(Poller* poller, uint16_t port)$/;"	f	class:Acceptor
 init	sock_poller.cpp	/^bool Poller::init()$/;"	f	class:Poller
 init	socketserver.cpp	/^bool SocketServer::init(uint16_t port)$/;"	f	class:SocketServer
 isReuseAddr	socket.cpp	/^bool Socket::isReuseAddr() const$/;"	f	class:Socket
 listen	socket.cpp	/^void Socket::listen()$/;"	f	class:Socket
 listen_ex	sock_op.cpp	/^int32_t sock_op::listen_ex(int32_t sockfd)$/;"	f	class:sock_op
 loop	eventloop.cpp	/^void EventLoop::loop()$/;"	f	class:EventLoop
+m_acceptor	socketserver.h	/^    Acceptor m_acceptor;$/;"	m	class:walle::net::SocketServer
 m_addr	endpoint.h	/^    struct sockaddr_in m_addr;$/;"	m	class:walle::net::Endpoint	typeref:struct:walle::net::Endpoint::sockaddr_in
+m_buffer	socket_buffer.h	/^    std::vector<char> m_buffer;$/;"	m	class:walle::net::SocketBuffer
 m_connections	socketserver.h	/^    ConnectionMap m_connections;$/;"	m	class:walle::net::SocketServer
 m_endpoint	connection.h	/^    Endpoint m_endpoint;$/;"	m	class:walle::net::Connection
 m_endpoint	connector.h	/^    Endpoint m_endpoint;$/;"	m	class:walle::net::Connector
+m_maxSize	socket_buffer.h	/^    uint32_t m_maxSize = 0;$/;"	m	class:walle::net::SocketBuffer
+m_poller	acceptor.h	/^    Poller* m_poller = nullptr;$/;"	m	class:walle::net::Acceptor
 m_poller	socketserver.h	/^    Poller* m_poller = nullptr;$/;"	m	class:walle::net::SocketServer
 m_pollfd	sock_poller.h	/^    int32_t m_pollfd = -1;$/;"	m	class:walle::net::Poller
+m_readIndex	socket_buffer.h	/^    uint32_t m_readIndex = 0;$/;"	m	class:walle::net::SocketBuffer
+m_recvBuf	socket.h	/^    SocketBuffer m_recvBuf;$/;"	m	class:walle::net::Socket
+m_sendBuf	socket.h	/^    SocketBuffer m_sendBuf;$/;"	m	class:walle::net::Socket
+m_socket	acceptor.h	/^    Socket m_socket;$/;"	m	class:walle::net::Acceptor
 m_socket	connection.h	/^    Socket m_socket;$/;"	m	class:walle::net::Connection
-m_socket	socketserver.h	/^    Socket m_socket;$/;"	m	class:walle::net::SocketServer
 m_sockfd	socket.h	/^    int32_t m_sockfd;$/;"	m	class:walle::net::Socket
+m_writeIndex	socket_buffer.h	/^    uint32_t m_writeIndex = 0;$/;"	m	class:walle::net::SocketBuffer
 main	example/client.cpp	/^int main()$/;"	f
 main	example/server.cpp	/^int main()$/;"	f
 main	example/socket_srv_test.cpp	/^int main()$/;"	f
 main	example/socket_test.cpp	/^int main()$/;"	f
 main	example/tcpserver_test.cpp	/^int main()$/;"	f
+moveSpace	socket_buffer.cpp	/^void SocketBuffer::moveSpace()$/;"	f	class:SocketBuffer
 net	acceptor.h	/^namespace net{$/;"	n	namespace:walle
 net	connection.h	/^namespace net{$/;"	n	namespace:walle
 net	connector.h	/^namespace net{$/;"	n	namespace:walle
@@ -99,6 +122,7 @@ net	sock_epoller.h	/^namespace net{$/;"	n	namespace:walle
 net	sock_op.h	/^namespace net{$/;"	n	namespace:walle
 net	sock_poller.h	/^namespace net{$/;"	n	namespace:walle
 net	socket.h	/^namespace net{$/;"	n	namespace:walle
+net	socket_buffer.h	/^namespace net{$/;"	n	namespace:walle
 net	socketserver.h	/^namespace net{$/;"	n	namespace:walle
 override	sock_epoller.h	/^    virtual bool sp_invalid(poll_fd fd) override;$/;"	m	class:walle::net::Epoller
 override	sock_epoller.h	/^    virtual int add(Socket* socket) override;$/;"	m	class:walle::net::Epoller
@@ -114,6 +138,7 @@ pollWriteCallBack	socket.h	/^    PollCallBack pollWriteCallBack;$/;"	m	class:wal
 poll_event	sock_poller.h	/^struct poll_event {$/;"	s	namespace:walle::net
 poll_fd	sock_poller.h	/^typedef int poll_fd;$/;"	t	namespace:walle::net
 read	sock_poller.h	/^	bool read;$/;"	m	struct:walle::net::poll_event
+read	socket_buffer.cpp	/^uint32_t SocketBuffer::read(char* data, uint32_t maxlen)$/;"	f	class:SocketBuffer
 recv	socket.cpp	/^int32_t Socket::recv(void* buf, int32_t bufLen)$/;"	f	class:Socket
 recv_ex	sock_op.cpp	/^int32_t sock_op::recv_ex(int32_t sockfd, void* buf, int32_t buflen)$/;"	f	class:sock_op
 release	sock_epoller.cpp	/^void Epoller::release()$/;"	f	class:Epoller
@@ -152,6 +177,9 @@ walle	sock_epoller.h	/^namespace walle{$/;"	n
 walle	sock_op.h	/^namespace walle{$/;"	n
 walle	sock_poller.h	/^namespace walle{$/;"	n
 walle	socket.h	/^namespace walle{$/;"	n
+walle	socket_buffer.h	/^namespace walle{$/;"	n
 walle	socketserver.h	/^namespace walle{$/;"	n
+writableSize	socket_buffer.cpp	/^uint32_t SocketBuffer::writableSize()$/;"	f	class:SocketBuffer
 write	sock_poller.h	/^	bool write;$/;"	m	struct:walle::net::poll_event
+write	socket_buffer.cpp	/^uint32_t SocketBuffer::write(const char* data, uint32_t len)$/;"	f	class:SocketBuffer
 ~Socket	socket.cpp	/^Socket::~Socket()$/;"	f	class:Socket

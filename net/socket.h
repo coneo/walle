@@ -11,6 +11,7 @@
 #include <functional>
 #include "endpoint.h"
 #include "sock_op.h"
+#include "socket_buffer.h"
 
 namespace walle{
 namespace net{
@@ -45,7 +46,10 @@ public:
 
     void defaultReadCallBack();
 
+    void readPacket(char* data, uint32_t len);
+
 public:
+
     typedef std::function<void ()> PollCallBack;
 
     void setPollReadCallBack(PollCallBack cb);
@@ -58,6 +62,9 @@ public:
 
 private:
     int32_t m_sockfd;
+
+    SocketBuffer m_recvBuf;
+    SocketBuffer m_sendBuf;
 };
 
 }}
