@@ -1,22 +1,19 @@
 CXX = g++
 SOURCES=$(wildcard *.cpp)
-OBJECTS=$(patsubst %.cpp, obj/%.o, $(SOURCES))
+OBJECTS=$(patsubst %.cpp, %.o, $(SOURCES))
 
 CXX_FLAGS = -std=c++11 -g
-INC_FLAGS = -I../
+TARGET = libbase.a
 
-TARGET = libnet.a
+.PHONY:
+all: $(TARGET)
+
 
 $(TARGET) : $(OBJECTS)
 	ar rs $(TARGET) $(OBJECTS)
 
-$(OBJECTS): obj
-
-obj:
-	@mkdir -p $@
-
-obj/%.o: %.cpp
-	$(CXX) $(CXX_FLAGS) $(INC_FLAGS) -c $< -o $@
+$(OBJECTS): %.o: %.cpp
+	$(CXX) $(CXX_FLAGS) -c $< -o $@
 
 
 #%.d: %.cpp
@@ -30,16 +27,10 @@ obj/%.o: %.cpp
 #-include $(OBJECTS:.o=.d)
 
 test:
-	@make -C example;
 
 clean:
-	-rm -f *.d *.d.*
-	-rm -rf obj/ *.d *.d.*
+	-rm -f *.o *.d *.d.*
 	-rm $(TARGET)
-	@make clean -C example
 
 ctags:
 	@ctags -R
-
-.PHONY:
-all: $(TARGET)

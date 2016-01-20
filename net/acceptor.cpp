@@ -1,6 +1,7 @@
 #include "acceptor.h"
 #include "sock_poller.h"
 #include "connection.h"
+#include "socketserver.h"
 
 using namespace walle::net;
 
@@ -8,10 +9,12 @@ Acceptor::Acceptor()
 {
 }
 
-bool Acceptor::init(Poller* poller, uint16_t port)
+bool Acceptor::init(SocketServer* server, Poller* poller, uint16_t port)
 {
-    if (!poller) return false;
+    if (poller == nullptr || server == nullptr) return false;
+
     m_poller = poller;
+    m_server = server;
 
     int32_t sock = sock_op::create_socket();
     m_socket.setFd(sock);
@@ -34,7 +37,7 @@ bool Acceptor::init(Poller* poller, uint16_t port)
 
 void Acceptor::accept()
 {
-    if (!m_poller) return ;
+    if (!m_poller || !m_server) return ;
 
     Endpoint cli_point;
     int32_t newfd = m_socket.accept(&cli_point);
@@ -52,7 +55,12 @@ void Acceptor::accept()
         fprintf(stderr, "can't add client fd to event pool.\n");
         return ;
     }
-    new_con->socket().setPollReadCallBack(std::bind(&Socket::defaultReadCallBack, &(new_con->socket())));
+    if (!m_server->addConnection(new_con))
+    {
+        fprintf(stderr, "can't add connection to server.\n");
+        return ;
+    }
+    new_con->socket().setPollReadCallBack(std::bind(&Connection::recvMsg, new_con));
 
     char msg[128] = "this is walle server";
     new_con->send(msg, sizeof(msg));

@@ -1,0 +1,911 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ATTRIBUTE_NAME	base/xmlparse/tinyxml2.h	/^        ATTRIBUTE_NAME		            	= 0,$/;"	e	enum:tinyxml2::StrPair::__anon1
+ATTRIBUTE_VALUE	base/xmlparse/tinyxml2.h	/^        ATTRIBUTE_VALUE		            	= NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION,$/;"	e	enum:tinyxml2::StrPair::__anon1
+ATTRIBUTE_VALUE_LEAVE_ENTITIES	base/xmlparse/tinyxml2.h	/^        ATTRIBUTE_VALUE_LEAVE_ENTITIES  	= NEEDS_NEWLINE_NORMALIZATION,$/;"	e	enum:tinyxml2::StrPair::__anon1
+Accept	base/xmlparse/tinyxml2.cpp	/^bool XMLComment::Accept( XMLVisitor* visitor ) const$/;"	f	class:tinyxml2::XMLComment
+Accept	base/xmlparse/tinyxml2.cpp	/^bool XMLDeclaration::Accept( XMLVisitor* visitor ) const$/;"	f	class:tinyxml2::XMLDeclaration
+Accept	base/xmlparse/tinyxml2.cpp	/^bool XMLDocument::Accept( XMLVisitor* visitor ) const$/;"	f	class:tinyxml2::XMLDocument
+Accept	base/xmlparse/tinyxml2.cpp	/^bool XMLElement::Accept( XMLVisitor* visitor ) const$/;"	f	class:tinyxml2::XMLElement
+Accept	base/xmlparse/tinyxml2.cpp	/^bool XMLText::Accept( XMLVisitor* visitor ) const$/;"	f	class:tinyxml2::XMLText
+Accept	base/xmlparse/tinyxml2.cpp	/^bool XMLUnknown::Accept( XMLVisitor* visitor ) const$/;"	f	class:tinyxml2::XMLUnknown
+Acceptor	net/acceptor.cpp	/^Acceptor::Acceptor()$/;"	f	class:Acceptor
+Acceptor	net/acceptor.h	/^class Acceptor$/;"	c	namespace:walle::net
+Alloc	base/xmlparse/tinyxml2.h	/^    virtual void* Alloc() {$/;"	f	class:tinyxml2::MemPoolT
+AppendCallback	base/logger/logger.h	/^    typedef std::function<void(const char*,uint32_t)> AppendCallback;$/;"	t	class:water::Logger
+Attribute	base/xmlparse/tinyxml2.cpp	/^const char* XMLElement::Attribute( const char* name, const char* value ) const$/;"	f	class:tinyxml2::XMLElement
+BASE_BASECMD_H	base/basecmd.h	10;"	d
+BASE_CMD_DISPATCHER_H	base/cmd_dispatcher.h	10;"	d
+BASE_TYPE_H	base/type.h	2;"	d
+BIG_BUFFER_SIZE	base/logger/log_buffer.h	/^const uint32_t BIG_BUFFER_SIZE = 4000 * 1000;$/;"	m	namespace:water
+BUF_SIZE	base/xmlparse/tinyxml2.h	/^        BUF_SIZE = 200$/;"	e	enum:tinyxml2::XMLPrinter::__anon7
+BUF_SIZE	base/xmlparse/tinyxml2.h	/^    enum { BUF_SIZE = 200 };$/;"	e	enum:tinyxml2::XMLAttribute::__anon4
+BUF_SIZE	base/xmlparse/tinyxml2.h	/^    enum { BUF_SIZE = 200 };$/;"	e	enum:tinyxml2::XMLElement::__anon6
+BackendLogger	base/logger/backend_logger.cpp	/^BackendLogger::BackendLogger(const std::string filename)$/;"	f	class:water::BackendLogger
+BackendLogger	base/logger/backend_logger.h	/^class BackendLogger$/;"	c	namespace:water
+BaseCmd	base/basecmd.h	/^    BaseCmd(uint32_t _id) : baseid(_id)$/;"	f	struct:walle::base::BaseCmd
+BaseCmd	base/basecmd.h	/^struct BaseCmd$/;"	s	namespace:walle::base
+Block	base/xmlparse/tinyxml2.h	/^    struct Block {$/;"	s	class:tinyxml2::MemPoolT
+BoolAttribute	base/xmlparse/tinyxml2.h	/^    bool	 BoolAttribute( const char* name ) const	{$/;"	f	class:tinyxml2::XMLElement
+BoolValue	base/xmlparse/tinyxml2.h	/^    bool	 BoolValue() const				{$/;"	f	class:tinyxml2::XMLAttribute
+Buffer	base/logger/backend_logger.h	/^    typedef LogBuffer Buffer;$/;"	t	class:water::BackendLogger
+BufferPtr	base/logger/backend_logger.h	/^    typedef std::unique_ptr<Buffer> BufferPtr;$/;"	t	class:water::BackendLogger
+BufferVec	base/logger/backend_logger.h	/^    typedef std::vector<BufferPtr> BufferVec;$/;"	t	class:water::BackendLogger
+CARRIAGE_RETURN	base/xmlparse/tinyxml2.cpp	/^static const char CARRIAGE_RETURN		= (char)0x0d;			\/\/ CR gets filtered out$/;"	v	file:
+CData	base/xmlparse/tinyxml2.h	/^    bool CData() const						{$/;"	f	class:tinyxml2::XMLText
+CLOSED	base/xmlparse/tinyxml2.h	/^        CLOSED,		\/\/ <foo\/>$/;"	e	enum:tinyxml2::XMLElement::__anon5
+CLOSING	base/xmlparse/tinyxml2.h	/^        CLOSING		\/\/ <\/foo>$/;"	e	enum:tinyxml2::XMLElement::__anon5
+COLLAPSE_WHITESPACE	base/xmlparse/tinyxml2.h	/^    COLLAPSE_WHITESPACE$/;"	e	enum:tinyxml2::Whitespace
+COMMENT	base/xmlparse/tinyxml2.h	/^        COMMENT				        = NEEDS_NEWLINE_NORMALIZATION$/;"	e	enum:tinyxml2::StrPair::__anon1
+COUNT	base/xmlparse/tinyxml2.h	/^    enum { COUNT = (4*1024)\/SIZE }; \/\/ Some compilers do not accept to use COUNT in private part if COUNT is private$/;"	e	enum:tinyxml2::MemPoolT::__anon3
+CR	base/xmlparse/tinyxml2.cpp	/^static const char CR = CARRIAGE_RETURN;$/;"	v	file:
+CStr	base/xmlparse/tinyxml2.h	/^    const char* CStr() const {$/;"	f	class:tinyxml2::XMLPrinter
+CStrSize	base/xmlparse/tinyxml2.h	/^    int CStrSize() const {$/;"	f	class:tinyxml2::XMLPrinter
+CXX	base/Makefile	/^CXX = g++$/;"	m
+CXX	example/client/Makefile	/^CXX = g++$/;"	m
+CXX	example/server/Makefile	/^CXX = g++$/;"	m
+CXX	net/Makefile	/^CXX = g++$/;"	m
+CXX	net/example/Makefile	/^CXX = g++$/;"	m
+CXXFLAGS	base/logger/test/Makefile	/^CXXFLAGS= -std=c++11 -g -D_HXQ_DEBUG$/;"	m
+CXX_DEPS	example/client/Makefile	/^CXX_DEPS = -DTEST_SERVER$/;"	m
+CXX_DEPS	example/server/Makefile	/^CXX_DEPS = -DTEST_SERVER$/;"	m
+CXX_DEPS	net/example/Makefile	/^CXX_DEPS = -DTEST_SERVER$/;"	m
+CXX_FLAGS	base/Makefile	/^CXX_FLAGS = -std=c++11 -g$/;"	m
+CXX_FLAGS	example/client/Makefile	/^CXX_FLAGS= -std=c++11 -g -fPIC$/;"	m
+CXX_FLAGS	example/server/Makefile	/^CXX_FLAGS= -std=c++11 -g -fPIC$/;"	m
+CXX_FLAGS	net/Makefile	/^CXX_FLAGS = -std=c++11 -g$/;"	m
+CXX_FLAGS	net/example/Makefile	/^CXX_FLAGS= -std=c++11 -g -fPIC$/;"	m
+CXX_LIBS	example/client/Makefile	/^CXX_LIBS = $(CXX_DEPS) -lpthread -lrt -L..\/..\/net -lnet$/;"	m
+CXX_LIBS	example/server/Makefile	/^CXX_LIBS = $(CXX_DEPS) -lpthread -lrt -L..\/..\/net -lnet$/;"	m
+CXX_LIBS	net/example/Makefile	/^CXX_LIBS = $(CXX_DEPS) -lpthread -lrt -L..\/ -lnet$/;"	m
+Capacity	base/xmlparse/tinyxml2.h	/^    int Capacity() const				{$/;"	f	class:tinyxml2::DynArray
+Chunk	base/xmlparse/tinyxml2.h	/^    union Chunk {$/;"	u	class:tinyxml2::MemPoolT
+Clear	base/xmlparse/tinyxml2.cpp	/^void XMLDocument::Clear()$/;"	f	class:tinyxml2::XMLDocument
+Clear	base/xmlparse/tinyxml2.h	/^    void Clear() {$/;"	f	class:tinyxml2::DynArray
+Clear	base/xmlparse/tinyxml2.h	/^    void Clear() {$/;"	f	class:tinyxml2::MemPoolT
+ClearBuffer	base/xmlparse/tinyxml2.h	/^    void ClearBuffer() {$/;"	f	class:tinyxml2::XMLPrinter
+CloseElement	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::CloseElement( bool compactMode )$/;"	f	class:tinyxml2::XMLPrinter
+ClosingType	base/xmlparse/tinyxml2.h	/^    int ClosingType() const {$/;"	f	class:tinyxml2::XMLElement
+CmdDispatcher	base/cmd_dispatcher.h	/^class CmdDispatcher$/;"	c	namespace:walle::base
+CmdFunc	base/cmd_dispatcher.h	/^    typedef std::function<bool (const BaseCmd*, uint32_t)> CmdFunc;$/;"	t	class:walle::base::CmdDispatcher
+CollapseWhitespace	base/xmlparse/tinyxml2.cpp	/^void StrPair::CollapseWhitespace()$/;"	f	class:tinyxml2::StrPair
+CompactMode	base/xmlparse/tinyxml2.h	/^	virtual bool CompactMode( const XMLElement& )	{ return _compactMode; }$/;"	f	class:tinyxml2::XMLPrinter
+Connection	net/connection.cpp	/^Connection::Connection(int32_t sockfd, const Endpoint& ep)$/;"	f	class:Connection
+Connection	net/connection.h	/^class Connection$/;"	c	namespace:walle::net
+ConnectionMap	net/socketserver.h	/^    typedef std::map<int32_t, Connection*> ConnectionMap;$/;"	t	class:walle::net::SocketServer
+Connector	net/connector.cpp	/^Connector::Connector(uint16_t port)$/;"	f	class:Connector
+Connector	net/connector.h	/^class Connector$/;"	c	namespace:walle::net
+ConvertUTF32ToUTF8	base/xmlparse/tinyxml2.cpp	/^void XMLUtil::ConvertUTF32ToUTF8( unsigned long input, char* output, int* length )$/;"	f	class:tinyxml2::XMLUtil
+CurrentAllocs	base/xmlparse/tinyxml2.h	/^    int CurrentAllocs() const		{$/;"	f	class:tinyxml2::MemPoolT
+DATA_CHUNK_SIZE	net/socket_buffer.h	/^    static const uint32_t DATA_CHUNK_SIZE = 64 * 1024;$/;"	m	class:walle::net::SocketBuffer
+DATA_HEAD_SIZE	net/socket_buffer.h	/^    static const uint32_t DATA_HEAD_SIZE = sizeof(uint32_t);$/;"	m	class:walle::net::SocketBuffer
+DEBUG	base/xmlparse/tinyxml2.h	54;"	d
+DOUBLE_QUOTE	base/xmlparse/tinyxml2.cpp	/^static const char DOUBLE_QUOTE			= '\\"';$/;"	v	file:
+DeleteAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLElement::DeleteAttribute( XMLAttribute* attribute )$/;"	f	class:tinyxml2::XMLElement
+DeleteAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLElement::DeleteAttribute( const char* name )$/;"	f	class:tinyxml2::XMLElement
+DeleteChild	base/xmlparse/tinyxml2.cpp	/^void XMLNode::DeleteChild( XMLNode* node )$/;"	f	class:tinyxml2::XMLNode
+DeleteChildren	base/xmlparse/tinyxml2.cpp	/^void XMLNode::DeleteChildren()$/;"	f	class:tinyxml2::XMLNode
+DeleteNode	base/xmlparse/tinyxml2.cpp	/^void XMLDocument::DeleteNode( XMLNode* node )	{$/;"	f	class:tinyxml2::XMLDocument
+DeleteNode	base/xmlparse/tinyxml2.cpp	/^void XMLNode::DeleteNode( XMLNode* node )$/;"	f	class:tinyxml2::XMLNode
+DoubleAttribute	base/xmlparse/tinyxml2.h	/^    double 	 DoubleAttribute( const char* name ) const	{$/;"	f	class:tinyxml2::XMLElement
+DoubleValue	base/xmlparse/tinyxml2.h	/^    double 	 DoubleValue() const			{$/;"	f	class:tinyxml2::XMLAttribute
+DynArray	base/xmlparse/tinyxml2.h	/^    DynArray() {$/;"	f	class:tinyxml2::DynArray
+DynArray	base/xmlparse/tinyxml2.h	/^class DynArray$/;"	c	namespace:tinyxml2
+ENTITY_RANGE	base/xmlparse/tinyxml2.h	/^        ENTITY_RANGE = 64,$/;"	e	enum:tinyxml2::XMLPrinter::__anon7
+Empty	base/xmlparse/tinyxml2.h	/^    bool Empty() const					{$/;"	f	class:tinyxml2::DynArray
+Empty	base/xmlparse/tinyxml2.h	/^    bool Empty() const {$/;"	f	class:tinyxml2::StrPair
+Endpoint	net/endpoint.cpp	/^Endpoint::Endpoint()$/;"	f	class:Endpoint
+Endpoint	net/endpoint.cpp	/^Endpoint::Endpoint(const Endpoint& other)$/;"	f	class:Endpoint
+Endpoint	net/endpoint.cpp	/^Endpoint::Endpoint(const std::string& ip, uint16_t port)$/;"	f	class:Endpoint
+Endpoint	net/endpoint.cpp	/^Endpoint::Endpoint(const struct sockaddr_in& addr)$/;"	f	class:Endpoint
+Endpoint	net/endpoint.cpp	/^Endpoint::Endpoint(uint16_t port)$/;"	f	class:Endpoint
+Endpoint	net/endpoint.h	/^class Endpoint$/;"	c	namespace:walle::net
+EnsureCapacity	base/xmlparse/tinyxml2.h	/^    void EnsureCapacity( int cap ) {$/;"	f	class:tinyxml2::DynArray
+Entity	base/xmlparse/tinyxml2.cpp	/^struct Entity {$/;"	s	namespace:tinyxml2	file:
+Epoller	net/sock_epoller.h	/^class Epoller : public Poller$/;"	c	namespace:walle::net
+Error	base/xmlparse/tinyxml2.h	/^    bool Error() const {$/;"	f	class:tinyxml2::XMLDocument
+ErrorID	base/xmlparse/tinyxml2.h	/^    XMLError  ErrorID() const {$/;"	f	class:tinyxml2::XMLDocument
+ErrorName	base/xmlparse/tinyxml2.cpp	/^const char* XMLDocument::ErrorName() const$/;"	f	class:tinyxml2::XMLDocument
+EventLoop	net/eventloop.cpp	/^EventLoop::EventLoop()$/;"	f	class:EventLoop
+EventLoop	net/eventloop.h	/^class EventLoop$/;"	c	namespace:walle::net
+F_WRLCK	base/logger/log_file.h	/^    struct flock m_lock { F_WRLCK, SEEK_SET, 0, 0, 0 };$/;"	m	struct:water::LogFile::m_lock
+FindAttribute	base/xmlparse/tinyxml2.cpp	/^const XMLAttribute* XMLElement::FindAttribute( const char* name ) const$/;"	f	class:tinyxml2::XMLElement
+FindAttribute	base/xmlparse/tinyxml2.h	/^    XMLAttribute* FindAttribute( const char* name ) {$/;"	f	class:tinyxml2::XMLElement
+FindOrCreateAttribute	base/xmlparse/tinyxml2.cpp	/^XMLAttribute* XMLElement::FindOrCreateAttribute( const char* name )$/;"	f	class:tinyxml2::XMLElement
+FirstAttribute	base/xmlparse/tinyxml2.h	/^    const XMLAttribute* FirstAttribute() const {$/;"	f	class:tinyxml2::XMLElement
+FirstChild	base/xmlparse/tinyxml2.h	/^    XMLHandle FirstChild() 													{$/;"	f	class:tinyxml2::XMLHandle
+FirstChild	base/xmlparse/tinyxml2.h	/^    XMLNode*		FirstChild()			{$/;"	f	class:tinyxml2::XMLNode
+FirstChild	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle FirstChild() const											{$/;"	f	class:tinyxml2::XMLConstHandle
+FirstChild	base/xmlparse/tinyxml2.h	/^    const XMLNode*  FirstChild() const		{$/;"	f	class:tinyxml2::XMLNode
+FirstChildElement	base/xmlparse/tinyxml2.cpp	/^const XMLElement* XMLNode::FirstChildElement( const char* name ) const$/;"	f	class:tinyxml2::XMLNode
+FirstChildElement	base/xmlparse/tinyxml2.h	/^    XMLElement* FirstChildElement( const char* name = 0 )	{$/;"	f	class:tinyxml2::XMLNode
+FirstChildElement	base/xmlparse/tinyxml2.h	/^    XMLHandle FirstChildElement( const char* name = 0 )						{$/;"	f	class:tinyxml2::XMLHandle
+FirstChildElement	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle FirstChildElement( const char* name = 0 ) const				{$/;"	f	class:tinyxml2::XMLConstHandle
+Fits	base/xmlparse/tinyxml2.cpp	/^bool LongFitsIntoSizeTMinusOne<false>::Fits( unsigned long \/*value*\/ )$/;"	f	class:tinyxml2::LongFitsIntoSizeTMinusOne
+FloatAttribute	base/xmlparse/tinyxml2.h	/^    float	 FloatAttribute( const char* name ) const	{$/;"	f	class:tinyxml2::XMLElement
+FloatValue	base/xmlparse/tinyxml2.h	/^    float	 FloatValue() const				{$/;"	f	class:tinyxml2::XMLAttribute
+Free	base/xmlparse/tinyxml2.h	/^    virtual void Free( void* mem ) {$/;"	f	class:tinyxml2::MemPoolT
+GetCharacterRef	base/xmlparse/tinyxml2.cpp	/^const char* XMLUtil::GetCharacterRef( const char* p, char* value, int* length )$/;"	f	class:tinyxml2::XMLUtil
+GetDocument	base/xmlparse/tinyxml2.h	/^    XMLDocument* GetDocument()				{$/;"	f	class:tinyxml2::XMLNode
+GetDocument	base/xmlparse/tinyxml2.h	/^    const XMLDocument* GetDocument() const	{$/;"	f	class:tinyxml2::XMLNode
+GetErrorStr1	base/xmlparse/tinyxml2.h	/^    const char* GetErrorStr1() const {$/;"	f	class:tinyxml2::XMLDocument
+GetErrorStr2	base/xmlparse/tinyxml2.h	/^    const char* GetErrorStr2() const {$/;"	f	class:tinyxml2::XMLDocument
+GetStr	base/xmlparse/tinyxml2.cpp	/^const char* StrPair::GetStr()$/;"	f	class:tinyxml2::StrPair
+GetText	base/xmlparse/tinyxml2.cpp	/^const char* XMLElement::GetText() const$/;"	f	class:tinyxml2::XMLElement
+HasBOM	base/xmlparse/tinyxml2.h	/^    bool HasBOM() const {$/;"	f	class:tinyxml2::XMLDocument
+IFormartAble	base/format.h	/^class IFormartAble$/;"	c	namespace:water
+INC	base/logger/test/Makefile	/^INC = -I ..\/$/;"	m
+INC	example/client/Makefile	/^INC = -I ..\/..\/$/;"	m
+INC	net/example/Makefile	/^INC = -I ..\/..\/$/;"	m
+INC_FLAGS	example/server/Makefile	/^INC_FLAGS= -I..\/..\/$/;"	m
+INC_FLAGS	net/Makefile	/^INC_FLAGS = -I..\/$/;"	m
+Identify	base/xmlparse/tinyxml2.cpp	/^char* XMLDocument::Identify( char* p, XMLNode** node )$/;"	f	class:tinyxml2::XMLDocument
+InsertAfterChild	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLNode::InsertAfterChild( XMLNode* afterThis, XMLNode* addThis )$/;"	f	class:tinyxml2::XMLNode
+InsertChildPreamble	base/xmlparse/tinyxml2.cpp	/^void XMLNode::InsertChildPreamble( XMLNode* insertThis ) const$/;"	f	class:tinyxml2::XMLNode
+InsertEndChild	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLNode::InsertEndChild( XMLNode* addThis )$/;"	f	class:tinyxml2::XMLNode
+InsertFirstChild	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLNode::InsertFirstChild( XMLNode* addThis )$/;"	f	class:tinyxml2::XMLNode
+IntAttribute	base/xmlparse/tinyxml2.h	/^    int		 IntAttribute( const char* name ) const		{$/;"	f	class:tinyxml2::XMLElement
+IntValue	base/xmlparse/tinyxml2.h	/^    int		 IntValue() const				{$/;"	f	class:tinyxml2::XMLAttribute
+IsNameChar	base/xmlparse/tinyxml2.h	/^    inline static bool IsNameChar( unsigned char ch ) {$/;"	f	class:tinyxml2::XMLUtil
+IsNameStartChar	base/xmlparse/tinyxml2.h	/^    inline static bool IsNameStartChar( unsigned char ch ) {$/;"	f	class:tinyxml2::XMLUtil
+IsUTF8Continuation	base/xmlparse/tinyxml2.h	/^    inline static bool IsUTF8Continuation( char p ) {$/;"	f	class:tinyxml2::XMLUtil
+IsWhiteSpace	base/xmlparse/tinyxml2.h	/^    static bool IsWhiteSpace( char p )					{$/;"	f	class:tinyxml2::XMLUtil
+ItemSize	base/xmlparse/tinyxml2.h	/^    virtual int ItemSize() const	{$/;"	f	class:tinyxml2::MemPoolT
+LF	base/xmlparse/tinyxml2.cpp	/^static const char LF = LINE_FEED;$/;"	v	file:
+LINE_FEED	base/xmlparse/tinyxml2.cpp	/^static const char LINE_FEED				= (char)0x0a;			\/\/ all line endings are normalized to LF$/;"	v	file:
+LL_DEBUG	base/logger/logger.h	/^	LL_DEBUG,$/;"	m	class:water::LogLevel
+LL_ERROR	base/logger/logger.h	/^	LL_ERROR,$/;"	m	class:water::LogLevel
+LL_TRACE	base/logger/logger.h	/^	LL_TRACE,$/;"	m	class:water::LogLevel
+LL_WARN	base/logger/logger.h	/^	LL_WARN,$/;"	m	class:water::LogLevel
+LOG_DEBUG	base/logger/logger.h	71;"	d
+LOG_ERROR	base/logger/logger.h	86;"	d
+LOG_TRACE	base/logger/logger.h	76;"	d
+LOG_WARN	base/logger/logger.h	81;"	d
+LastChild	base/xmlparse/tinyxml2.h	/^    XMLHandle LastChild()													{$/;"	f	class:tinyxml2::XMLHandle
+LastChild	base/xmlparse/tinyxml2.h	/^    XMLNode*		LastChild()								{$/;"	f	class:tinyxml2::XMLNode
+LastChild	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle LastChild()	const										{$/;"	f	class:tinyxml2::XMLConstHandle
+LastChild	base/xmlparse/tinyxml2.h	/^    const XMLNode*	LastChild() const						{$/;"	f	class:tinyxml2::XMLNode
+LastChildElement	base/xmlparse/tinyxml2.cpp	/^const XMLElement* XMLNode::LastChildElement( const char* name ) const$/;"	f	class:tinyxml2::XMLNode
+LastChildElement	base/xmlparse/tinyxml2.h	/^    XMLElement* LastChildElement( const char* name = 0 )	{$/;"	f	class:tinyxml2::XMLNode
+LastChildElement	base/xmlparse/tinyxml2.h	/^    XMLHandle LastChildElement( const char* name = 0 )						{$/;"	f	class:tinyxml2::XMLHandle
+LastChildElement	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle LastChildElement( const char* name = 0 ) const				{$/;"	f	class:tinyxml2::XMLConstHandle
+LinkEndChild	base/xmlparse/tinyxml2.h	/^    XMLNode* LinkEndChild( XMLNode* addThis )	{$/;"	f	class:tinyxml2::XMLNode
+LoadFile	base/xmlparse/tinyxml2.cpp	/^XMLError XMLDocument::LoadFile( FILE* fp )$/;"	f	class:tinyxml2::XMLDocument
+LoadFile	base/xmlparse/tinyxml2.cpp	/^XMLError XMLDocument::LoadFile( const char* filename )$/;"	f	class:tinyxml2::XMLDocument
+LogBuffer	base/logger/log_buffer.h	/^    LogBuffer(uint32_t size=BIG_BUFFER_SIZE) $/;"	f	class:water::LogBuffer
+LogBuffer	base/logger/log_buffer.h	/^class LogBuffer$/;"	c	namespace:water
+LogFile	base/logger/log_file.cpp	/^LogFile::LogFile(const std::string filename)$/;"	f	class:water::LogFile
+LogFile	base/logger/log_file.h	/^class LogFile$/;"	c	namespace:water
+LogLevel	base/logger/logger.h	/^enum class LogLevel : uint8_t$/;"	c	namespace:water
+LogStream	base/logger/logger.h	/^typedef std::stringstream LogStream; \/\/FIXME: move to a better one$/;"	t	namespace:water
+Logger	base/logger/logger.cpp	/^Logger::Logger()$/;"	f	class:water::Logger
+Logger	base/logger/logger.h	/^class Logger$/;"	c	namespace:water
+MAX_EVENT	net/sock_poller.h	9;"	d
+MSG_clienttest	cmd/testcmd.h	/^    MSG_clienttest() : BaseCmd(MSG_clienttest_ID)$/;"	f	struct:cmd::MSG_clienttest
+MSG_clienttest	cmd/testcmd.h	/^struct MSG_clienttest : public BaseCmd$/;"	s	namespace:cmd
+MSG_clienttest_ID	cmd/testcmd.h	/^const uint16_t MSG_clienttest_ID = 1;$/;"	m	namespace:cmd
+M_bufReserveSize	base/logger/backend_logger.h	/^    static const uint32_t M_bufReserveSize = 20;$/;"	m	class:water::BackendLogger
+Mem	base/xmlparse/tinyxml2.h	/^    T* Mem()							{$/;"	f	class:tinyxml2::DynArray
+Mem	base/xmlparse/tinyxml2.h	/^    const T* Mem() const				{$/;"	f	class:tinyxml2::DynArray
+MemPool	base/xmlparse/tinyxml2.h	/^    MemPool() {}$/;"	f	class:tinyxml2::MemPool
+MemPool	base/xmlparse/tinyxml2.h	/^class MemPool$/;"	c	namespace:tinyxml2
+MemPoolT	base/xmlparse/tinyxml2.h	/^    MemPoolT() : _root(0), _currentAllocs(0), _nAllocs(0), _maxAllocs(0), _nUntracked(0)	{}$/;"	f	class:tinyxml2::MemPoolT
+MemPoolT	base/xmlparse/tinyxml2.h	/^class MemPoolT : public MemPool$/;"	c	namespace:tinyxml2
+MyServer	example/server/server.cpp	/^    MyServer() {}$/;"	f	class:MyServer
+MyServer	example/server/server.cpp	/^class MyServer : public walle::net::SocketServer$/;"	c	file:
+NEEDS_DELETE	base/xmlparse/tinyxml2.h	/^        NEEDS_DELETE = 0x200$/;"	e	enum:tinyxml2::StrPair::__anon2
+NEEDS_ENTITY_PROCESSING	base/xmlparse/tinyxml2.h	/^        NEEDS_ENTITY_PROCESSING			= 0x01,$/;"	e	enum:tinyxml2::StrPair::__anon1
+NEEDS_FLUSH	base/xmlparse/tinyxml2.h	/^        NEEDS_FLUSH = 0x100,$/;"	e	enum:tinyxml2::StrPair::__anon2
+NEEDS_NEWLINE_NORMALIZATION	base/xmlparse/tinyxml2.h	/^        NEEDS_NEWLINE_NORMALIZATION		= 0x02,$/;"	e	enum:tinyxml2::StrPair::__anon1
+NEEDS_WHITESPACE_COLLAPSING	base/xmlparse/tinyxml2.h	/^        NEEDS_WHITESPACE_COLLAPSING     = 0x04,$/;"	e	enum:tinyxml2::StrPair::__anon1
+NET_CONNECTION_H	net/connection.h	10;"	d
+NET_SOCKET_BUFFER_H	net/socket_buffer.h	2;"	d
+NET_SOCKET_SERVER_H	net/socketserver.h	2;"	d
+NET_SOCK_EPOLLER_H	net/sock_epoller.h	2;"	d
+NET_SOCK_POLLER_H	net/sock_poller.h	2;"	d
+NUM_ENTITIES	base/xmlparse/tinyxml2.cpp	/^static const int NUM_ENTITIES = 5;$/;"	m	namespace:tinyxml2	file:
+Name	base/xmlparse/tinyxml2.cpp	/^const char* XMLAttribute::Name() const $/;"	f	class:tinyxml2::XMLAttribute
+Name	base/xmlparse/tinyxml2.h	/^    const char* Name() const		{$/;"	f	class:tinyxml2::XMLElement
+NewComment	base/xmlparse/tinyxml2.cpp	/^XMLComment* XMLDocument::NewComment( const char* str )$/;"	f	class:tinyxml2::XMLDocument
+NewDeclaration	base/xmlparse/tinyxml2.cpp	/^XMLDeclaration* XMLDocument::NewDeclaration( const char* str )$/;"	f	class:tinyxml2::XMLDocument
+NewElement	base/xmlparse/tinyxml2.cpp	/^XMLElement* XMLDocument::NewElement( const char* name )$/;"	f	class:tinyxml2::XMLDocument
+NewText	base/xmlparse/tinyxml2.cpp	/^XMLText* XMLDocument::NewText( const char* str )$/;"	f	class:tinyxml2::XMLDocument
+NewUnknown	base/xmlparse/tinyxml2.cpp	/^XMLUnknown* XMLDocument::NewUnknown( const char* str )$/;"	f	class:tinyxml2::XMLDocument
+Next	base/xmlparse/tinyxml2.h	/^    const XMLAttribute* Next() const {$/;"	f	class:tinyxml2::XMLAttribute
+NextSibling	base/xmlparse/tinyxml2.h	/^    XMLHandle NextSibling()													{$/;"	f	class:tinyxml2::XMLHandle
+NextSibling	base/xmlparse/tinyxml2.h	/^    XMLNode*	NextSibling()								{$/;"	f	class:tinyxml2::XMLNode
+NextSibling	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle NextSibling() const										{$/;"	f	class:tinyxml2::XMLConstHandle
+NextSibling	base/xmlparse/tinyxml2.h	/^    const XMLNode*	NextSibling() const						{$/;"	f	class:tinyxml2::XMLNode
+NextSiblingElement	base/xmlparse/tinyxml2.cpp	/^const XMLElement* XMLNode::NextSiblingElement( const char* name ) const$/;"	f	class:tinyxml2::XMLNode
+NextSiblingElement	base/xmlparse/tinyxml2.h	/^    XMLElement*	NextSiblingElement( const char* name = 0 )	{$/;"	f	class:tinyxml2::XMLNode
+NextSiblingElement	base/xmlparse/tinyxml2.h	/^    XMLHandle NextSiblingElement( const char* name = 0 )					{$/;"	f	class:tinyxml2::XMLHandle
+NextSiblingElement	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle NextSiblingElement( const char* name = 0 ) const			{$/;"	f	class:tinyxml2::XMLConstHandle
+NoChildren	base/xmlparse/tinyxml2.h	/^    bool NoChildren() const					{$/;"	f	class:tinyxml2::XMLNode
+OBJECTS	base/Makefile	/^OBJECTS=$(patsubst %.cpp, %.o, $(SOURCES))$/;"	m
+OBJECTS	net/Makefile	/^OBJECTS=$(patsubst %.cpp, obj\/%.o, $(SOURCES))$/;"	m
+OPEN	base/xmlparse/tinyxml2.h	/^        OPEN,		\/\/ <foo>$/;"	e	enum:tinyxml2::XMLElement::__anon5
+OpenElement	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::OpenElement( const char* name, bool compactMode )$/;"	f	class:tinyxml2::XMLPrinter
+PRESERVE_WHITESPACE	base/xmlparse/tinyxml2.h	/^    PRESERVE_WHITESPACE,$/;"	e	enum:tinyxml2::Whitespace
+Parent	base/xmlparse/tinyxml2.h	/^    XMLNode* Parent()						{$/;"	f	class:tinyxml2::XMLNode
+Parent	base/xmlparse/tinyxml2.h	/^    const XMLNode*	Parent() const			{$/;"	f	class:tinyxml2::XMLNode
+Parse	base/xmlparse/tinyxml2.cpp	/^XMLError XMLDocument::Parse( const char* p, size_t len )$/;"	f	class:tinyxml2::XMLDocument
+Parse	base/xmlparse/tinyxml2.cpp	/^void XMLDocument::Parse()$/;"	f	class:tinyxml2::XMLDocument
+ParseAttributes	base/xmlparse/tinyxml2.cpp	/^char* XMLElement::ParseAttributes( char* p )$/;"	f	class:tinyxml2::XMLElement
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLAttribute::ParseDeep( char* p, bool processEntities )$/;"	f	class:tinyxml2::XMLAttribute
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLComment::ParseDeep( char* p, StrPair* )$/;"	f	class:tinyxml2::XMLComment
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLDeclaration::ParseDeep( char* p, StrPair* )$/;"	f	class:tinyxml2::XMLDeclaration
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLElement::ParseDeep( char* p, StrPair* strPair )$/;"	f	class:tinyxml2::XMLElement
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLNode::ParseDeep( char* p, StrPair* parentEnd )$/;"	f	class:tinyxml2::XMLNode
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLText::ParseDeep( char* p, StrPair* )$/;"	f	class:tinyxml2::XMLText
+ParseDeep	base/xmlparse/tinyxml2.cpp	/^char* XMLUnknown::ParseDeep( char* p, StrPair* )$/;"	f	class:tinyxml2::XMLUnknown
+ParseName	base/xmlparse/tinyxml2.cpp	/^char* StrPair::ParseName( char* p )$/;"	f	class:tinyxml2::StrPair
+ParseText	base/xmlparse/tinyxml2.cpp	/^char* StrPair::ParseText( char* p, const char* endTag, int strFlags )$/;"	f	class:tinyxml2::StrPair
+PeekTop	base/xmlparse/tinyxml2.h	/^    const T& PeekTop() const            {$/;"	f	class:tinyxml2::DynArray
+PollCallBack	net/socket.h	/^    typedef std::function<void ()> PollCallBack;$/;"	t	class:walle::net::Socket
+Poller	net/sock_poller.h	/^class Poller$/;"	c	namespace:walle::net
+Pop	base/xmlparse/tinyxml2.h	/^    T Pop() {$/;"	f	class:tinyxml2::DynArray
+PopArr	base/xmlparse/tinyxml2.h	/^    void PopArr( int count ) {$/;"	f	class:tinyxml2::DynArray
+PreviousSibling	base/xmlparse/tinyxml2.h	/^    XMLHandle PreviousSibling()												{$/;"	f	class:tinyxml2::XMLHandle
+PreviousSibling	base/xmlparse/tinyxml2.h	/^    XMLNode*	PreviousSibling()							{$/;"	f	class:tinyxml2::XMLNode
+PreviousSibling	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle PreviousSibling() const									{$/;"	f	class:tinyxml2::XMLConstHandle
+PreviousSibling	base/xmlparse/tinyxml2.h	/^    const XMLNode*	PreviousSibling() const					{$/;"	f	class:tinyxml2::XMLNode
+PreviousSiblingElement	base/xmlparse/tinyxml2.cpp	/^const XMLElement* XMLNode::PreviousSiblingElement( const char* name ) const$/;"	f	class:tinyxml2::XMLNode
+PreviousSiblingElement	base/xmlparse/tinyxml2.h	/^    XMLElement*	PreviousSiblingElement( const char* name = 0 ) {$/;"	f	class:tinyxml2::XMLNode
+PreviousSiblingElement	base/xmlparse/tinyxml2.h	/^    XMLHandle PreviousSiblingElement( const char* name = 0 )				{$/;"	f	class:tinyxml2::XMLHandle
+PreviousSiblingElement	base/xmlparse/tinyxml2.h	/^    const XMLConstHandle PreviousSiblingElement( const char* name = 0 ) const		{$/;"	f	class:tinyxml2::XMLConstHandle
+Print	base/xmlparse/tinyxml2.cpp	/^void XMLDocument::Print( XMLPrinter* streamer ) const$/;"	f	class:tinyxml2::XMLDocument
+Print	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::Print( const char* format, ... )$/;"	f	class:tinyxml2::XMLPrinter
+PrintError	base/xmlparse/tinyxml2.cpp	/^void XMLDocument::PrintError() const$/;"	f	class:tinyxml2::XMLDocument
+PrintSpace	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PrintSpace( int depth )$/;"	f	class:tinyxml2::XMLPrinter
+PrintString	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PrintString( const char* p, bool restricted )$/;"	f	class:tinyxml2::XMLPrinter
+ProcessEntities	base/xmlparse/tinyxml2.h	/^    bool ProcessEntities() const		{$/;"	f	class:tinyxml2::XMLDocument
+Push	base/xmlparse/tinyxml2.h	/^    void Push( T t ) {$/;"	f	class:tinyxml2::DynArray
+PushArr	base/xmlparse/tinyxml2.h	/^    T* PushArr( int count ) {$/;"	f	class:tinyxml2::DynArray
+PushAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushAttribute( const char* name, bool v )$/;"	f	class:tinyxml2::XMLPrinter
+PushAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushAttribute( const char* name, const char* value )$/;"	f	class:tinyxml2::XMLPrinter
+PushAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushAttribute( const char* name, double v )$/;"	f	class:tinyxml2::XMLPrinter
+PushAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushAttribute( const char* name, int v )$/;"	f	class:tinyxml2::XMLPrinter
+PushAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushAttribute( const char* name, unsigned v )$/;"	f	class:tinyxml2::XMLPrinter
+PushComment	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushComment( const char* comment )$/;"	f	class:tinyxml2::XMLPrinter
+PushDeclaration	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushDeclaration( const char* value )$/;"	f	class:tinyxml2::XMLPrinter
+PushHeader	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushHeader( bool writeBOM, bool writeDec )$/;"	f	class:tinyxml2::XMLPrinter
+PushText	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushText( bool value )$/;"	f	class:tinyxml2::XMLPrinter
+PushText	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushText( const char* text, bool cdata )$/;"	f	class:tinyxml2::XMLPrinter
+PushText	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushText( double value )$/;"	f	class:tinyxml2::XMLPrinter
+PushText	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushText( float value )$/;"	f	class:tinyxml2::XMLPrinter
+PushText	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushText( int value )$/;"	f	class:tinyxml2::XMLPrinter
+PushText	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushText( unsigned value )$/;"	f	class:tinyxml2::XMLPrinter
+PushUnknown	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::PushUnknown( const char* value )$/;"	f	class:tinyxml2::XMLPrinter
+QueryAttribute	base/xmlparse/tinyxml2.h	/^	int QueryAttribute( const char* name, bool* value ) const {$/;"	f	class:tinyxml2::XMLElement
+QueryAttribute	base/xmlparse/tinyxml2.h	/^	int QueryAttribute( const char* name, double* value ) const {$/;"	f	class:tinyxml2::XMLElement
+QueryAttribute	base/xmlparse/tinyxml2.h	/^	int QueryAttribute( const char* name, float* value ) const {$/;"	f	class:tinyxml2::XMLElement
+QueryAttribute	base/xmlparse/tinyxml2.h	/^	int QueryAttribute( const char* name, int* value ) const {$/;"	f	class:tinyxml2::XMLElement
+QueryAttribute	base/xmlparse/tinyxml2.h	/^	int QueryAttribute( const char* name, unsigned int* value ) const {$/;"	f	class:tinyxml2::XMLElement
+QueryBoolAttribute	base/xmlparse/tinyxml2.h	/^    XMLError QueryBoolAttribute( const char* name, bool* value ) const				{$/;"	f	class:tinyxml2::XMLElement
+QueryBoolText	base/xmlparse/tinyxml2.cpp	/^XMLError XMLElement::QueryBoolText( bool* bval ) const$/;"	f	class:tinyxml2::XMLElement
+QueryBoolValue	base/xmlparse/tinyxml2.cpp	/^XMLError XMLAttribute::QueryBoolValue( bool* value ) const$/;"	f	class:tinyxml2::XMLAttribute
+QueryDoubleAttribute	base/xmlparse/tinyxml2.h	/^    XMLError QueryDoubleAttribute( const char* name, double* value ) const			{$/;"	f	class:tinyxml2::XMLElement
+QueryDoubleText	base/xmlparse/tinyxml2.cpp	/^XMLError XMLElement::QueryDoubleText( double* dval ) const$/;"	f	class:tinyxml2::XMLElement
+QueryDoubleValue	base/xmlparse/tinyxml2.cpp	/^XMLError XMLAttribute::QueryDoubleValue( double* value ) const$/;"	f	class:tinyxml2::XMLAttribute
+QueryFloatAttribute	base/xmlparse/tinyxml2.h	/^    XMLError QueryFloatAttribute( const char* name, float* value ) const			{$/;"	f	class:tinyxml2::XMLElement
+QueryFloatText	base/xmlparse/tinyxml2.cpp	/^XMLError XMLElement::QueryFloatText( float* fval ) const$/;"	f	class:tinyxml2::XMLElement
+QueryFloatValue	base/xmlparse/tinyxml2.cpp	/^XMLError XMLAttribute::QueryFloatValue( float* value ) const$/;"	f	class:tinyxml2::XMLAttribute
+QueryIntAttribute	base/xmlparse/tinyxml2.h	/^    XMLError QueryIntAttribute( const char* name, int* value ) const				{$/;"	f	class:tinyxml2::XMLElement
+QueryIntText	base/xmlparse/tinyxml2.cpp	/^XMLError XMLElement::QueryIntText( int* ival ) const$/;"	f	class:tinyxml2::XMLElement
+QueryIntValue	base/xmlparse/tinyxml2.cpp	/^XMLError XMLAttribute::QueryIntValue( int* value ) const$/;"	f	class:tinyxml2::XMLAttribute
+QueryUnsignedAttribute	base/xmlparse/tinyxml2.h	/^    XMLError QueryUnsignedAttribute( const char* name, unsigned int* value ) const	{$/;"	f	class:tinyxml2::XMLElement
+QueryUnsignedText	base/xmlparse/tinyxml2.cpp	/^XMLError XMLElement::QueryUnsignedText( unsigned* uval ) const$/;"	f	class:tinyxml2::XMLElement
+QueryUnsignedValue	base/xmlparse/tinyxml2.cpp	/^XMLError XMLAttribute::QueryUnsignedValue( unsigned int* value ) const$/;"	f	class:tinyxml2::XMLAttribute
+ReadBOM	base/xmlparse/tinyxml2.cpp	/^const char* XMLUtil::ReadBOM( const char* p, bool* bom )$/;"	f	class:tinyxml2::XMLUtil
+Reset	base/xmlparse/tinyxml2.cpp	/^void StrPair::Reset()$/;"	f	class:tinyxml2::StrPair
+RootElement	base/xmlparse/tinyxml2.h	/^    XMLElement* RootElement()				{$/;"	f	class:tinyxml2::XMLDocument
+RootElement	base/xmlparse/tinyxml2.h	/^    const XMLElement* RootElement() const	{$/;"	f	class:tinyxml2::XMLDocument
+SAFE_DELETE	base/safe_define.h	12;"	d
+SAFE_DELETE_VEC	base/safe_define.h	13;"	d
+SEEK_SET	base/logger/log_file.h	/^    struct flock m_lock { F_WRLCK, SEEK_SET, 0, 0, 0 };$/;"	m	struct:water::LogFile::m_lock
+SERVER_PORT	example/client/client.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	example/client/server.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	example/client/socket_client.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	example/client/socket_srv_test.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	example/client/socket_test.cpp	/^static const uint16_t SERVER_PORT = 9090;$/;"	v	file:
+SERVER_PORT	example/server/server.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	net/example/client.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	net/example/server.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	net/example/socket_client.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	net/example/socket_srv_test.cpp	/^static const uint16_t SERVER_PORT = 9091;$/;"	v	file:
+SERVER_PORT	net/example/socket_test.cpp	/^static const uint16_t SERVER_PORT = 9090;$/;"	v	file:
+SINGLE_QUOTE	base/xmlparse/tinyxml2.cpp	/^static const char SINGLE_QUOTE			= '\\'';$/;"	v	file:
+SOCK_BUF_INIT_SIZE	net/socket_buffer.h	/^    static const uint32_t SOCK_BUF_INIT_SIZE = 1024;$/;"	m	class:walle::net::SocketBuffer
+SOCK_HASH_GET_COMPRESS	net/socket_buffer.h	19;"	d
+SOCK_HASH_GET_ENC	net/socket_buffer.h	22;"	d
+SOCK_HASH_GET_LEN	net/socket_buffer.h	16;"	d
+SOCK_HASH_LEN	net/socket_buffer.h	25;"	d
+SOURCES	base/Makefile	/^SOURCES=$(wildcard *.cpp)$/;"	m
+SOURCES	net/Makefile	/^SOURCES=$(wildcard *.cpp)$/;"	m
+SaveFile	base/xmlparse/tinyxml2.cpp	/^XMLError XMLDocument::SaveFile( FILE* fp, bool compact )$/;"	f	class:tinyxml2::XMLDocument
+SaveFile	base/xmlparse/tinyxml2.cpp	/^XMLError XMLDocument::SaveFile( const char* filename, bool compact )$/;"	f	class:tinyxml2::XMLDocument
+SealElementIfJustOpened	base/xmlparse/tinyxml2.cpp	/^void XMLPrinter::SealElementIfJustOpened()$/;"	f	class:tinyxml2::XMLPrinter
+Set	base/xmlparse/tinyxml2.h	/^    void Set( char* start, char* end, int flags ) {$/;"	f	class:tinyxml2::StrPair
+SetAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetAttribute( bool v )$/;"	f	class:tinyxml2::XMLAttribute
+SetAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetAttribute( const char* v )$/;"	f	class:tinyxml2::XMLAttribute
+SetAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetAttribute( double v )$/;"	f	class:tinyxml2::XMLAttribute
+SetAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetAttribute( float v )$/;"	f	class:tinyxml2::XMLAttribute
+SetAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetAttribute( int v )$/;"	f	class:tinyxml2::XMLAttribute
+SetAttribute	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetAttribute( unsigned v )$/;"	f	class:tinyxml2::XMLAttribute
+SetAttribute	base/xmlparse/tinyxml2.h	/^    void SetAttribute( const char* name, bool value )			{$/;"	f	class:tinyxml2::XMLElement
+SetAttribute	base/xmlparse/tinyxml2.h	/^    void SetAttribute( const char* name, const char* value )	{$/;"	f	class:tinyxml2::XMLElement
+SetAttribute	base/xmlparse/tinyxml2.h	/^    void SetAttribute( const char* name, double value )		{$/;"	f	class:tinyxml2::XMLElement
+SetAttribute	base/xmlparse/tinyxml2.h	/^    void SetAttribute( const char* name, float value )		{$/;"	f	class:tinyxml2::XMLElement
+SetAttribute	base/xmlparse/tinyxml2.h	/^    void SetAttribute( const char* name, int value )			{$/;"	f	class:tinyxml2::XMLElement
+SetAttribute	base/xmlparse/tinyxml2.h	/^    void SetAttribute( const char* name, unsigned value )		{$/;"	f	class:tinyxml2::XMLElement
+SetBOM	base/xmlparse/tinyxml2.h	/^    void SetBOM( bool useBOM ) {$/;"	f	class:tinyxml2::XMLDocument
+SetCData	base/xmlparse/tinyxml2.h	/^    void SetCData( bool isCData )			{$/;"	f	class:tinyxml2::XMLText
+SetError	base/xmlparse/tinyxml2.cpp	/^void XMLDocument::SetError( XMLError error, const char* str1, const char* str2 )$/;"	f	class:tinyxml2::XMLDocument
+SetInternedStr	base/xmlparse/tinyxml2.h	/^    void SetInternedStr( const char* str ) {$/;"	f	class:tinyxml2::StrPair
+SetName	base/xmlparse/tinyxml2.cpp	/^void XMLAttribute::SetName( const char* n )$/;"	f	class:tinyxml2::XMLAttribute
+SetName	base/xmlparse/tinyxml2.h	/^    void SetName( const char* str, bool staticMem=false )	{$/;"	f	class:tinyxml2::XMLElement
+SetStr	base/xmlparse/tinyxml2.cpp	/^void StrPair::SetStr( const char* str, int flags )$/;"	f	class:tinyxml2::StrPair
+SetText	base/xmlparse/tinyxml2.cpp	/^void	XMLElement::SetText( const char* inText )$/;"	f	class:tinyxml2::XMLElement
+SetText	base/xmlparse/tinyxml2.cpp	/^void XMLElement::SetText( bool v ) $/;"	f	class:tinyxml2::XMLElement
+SetText	base/xmlparse/tinyxml2.cpp	/^void XMLElement::SetText( double v ) $/;"	f	class:tinyxml2::XMLElement
+SetText	base/xmlparse/tinyxml2.cpp	/^void XMLElement::SetText( float v ) $/;"	f	class:tinyxml2::XMLElement
+SetText	base/xmlparse/tinyxml2.cpp	/^void XMLElement::SetText( int v ) $/;"	f	class:tinyxml2::XMLElement
+SetText	base/xmlparse/tinyxml2.cpp	/^void XMLElement::SetText( unsigned v ) $/;"	f	class:tinyxml2::XMLElement
+SetTracked	base/xmlparse/tinyxml2.h	/^    void SetTracked() {$/;"	f	class:tinyxml2::MemPoolT
+SetValue	base/xmlparse/tinyxml2.cpp	/^void XMLNode::SetValue( const char* str, bool staticMem )$/;"	f	class:tinyxml2::XMLNode
+ShallowClone	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLComment::ShallowClone( XMLDocument* doc ) const$/;"	f	class:tinyxml2::XMLComment
+ShallowClone	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLDeclaration::ShallowClone( XMLDocument* doc ) const$/;"	f	class:tinyxml2::XMLDeclaration
+ShallowClone	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLElement::ShallowClone( XMLDocument* doc ) const$/;"	f	class:tinyxml2::XMLElement
+ShallowClone	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLText::ShallowClone( XMLDocument* doc ) const$/;"	f	class:tinyxml2::XMLText
+ShallowClone	base/xmlparse/tinyxml2.cpp	/^XMLNode* XMLUnknown::ShallowClone( XMLDocument* doc ) const$/;"	f	class:tinyxml2::XMLUnknown
+ShallowClone	base/xmlparse/tinyxml2.h	/^    virtual XMLNode* ShallowClone( XMLDocument* \/*document*\/ ) const	{$/;"	f	class:tinyxml2::XMLDocument
+ShallowEqual	base/xmlparse/tinyxml2.cpp	/^bool XMLComment::ShallowEqual( const XMLNode* compare ) const$/;"	f	class:tinyxml2::XMLComment
+ShallowEqual	base/xmlparse/tinyxml2.cpp	/^bool XMLDeclaration::ShallowEqual( const XMLNode* compare ) const$/;"	f	class:tinyxml2::XMLDeclaration
+ShallowEqual	base/xmlparse/tinyxml2.cpp	/^bool XMLElement::ShallowEqual( const XMLNode* compare ) const$/;"	f	class:tinyxml2::XMLElement
+ShallowEqual	base/xmlparse/tinyxml2.cpp	/^bool XMLText::ShallowEqual( const XMLNode* compare ) const$/;"	f	class:tinyxml2::XMLText
+ShallowEqual	base/xmlparse/tinyxml2.cpp	/^bool XMLUnknown::ShallowEqual( const XMLNode* compare ) const$/;"	f	class:tinyxml2::XMLUnknown
+ShallowEqual	base/xmlparse/tinyxml2.h	/^    virtual bool ShallowEqual( const XMLNode* \/*compare*\/ ) const	{$/;"	f	class:tinyxml2::XMLDocument
+Size	base/xmlparse/tinyxml2.h	/^    int Size() const					{$/;"	f	class:tinyxml2::DynArray
+SkipWhiteSpace	base/xmlparse/tinyxml2.h	/^    static char* SkipWhiteSpace( char* p )				{$/;"	f	class:tinyxml2::XMLUtil
+SkipWhiteSpace	base/xmlparse/tinyxml2.h	/^    static const char* SkipWhiteSpace( const char* p )	{$/;"	f	class:tinyxml2::XMLUtil
+Socket	net/socket.cpp	/^Socket::Socket(int32_t sockfd)$/;"	f	class:Socket
+Socket	net/socket.h	/^class Socket$/;"	c	namespace:walle::net
+SocketBuffer	net/socket_buffer.cpp	/^SocketBuffer::SocketBuffer(uint32_t datasize)$/;"	f	class:SocketBuffer
+SocketBuffer	net/socket_buffer.h	/^class SocketBuffer$/;"	c	namespace:walle::net
+SocketServer	net/socketserver.cpp	/^SocketServer::SocketServer()$/;"	f	class:SocketServer
+SocketServer	net/socketserver.h	/^class SocketServer$/;"	c	namespace:walle::net
+StrPair	base/xmlparse/tinyxml2.h	/^    StrPair() : _flags( 0 ), _start( 0 ), _end( 0 ) {}$/;"	f	class:tinyxml2::StrPair
+StrPair	base/xmlparse/tinyxml2.h	/^class StrPair$/;"	c	namespace:tinyxml2
+StringEqual	base/xmlparse/tinyxml2.h	/^    inline static bool StringEqual( const char* p, const char* q, int nChar=INT_MAX )  {$/;"	f	class:tinyxml2::XMLUtil
+TARGET	base/Makefile	/^TARGET = libbase.a$/;"	m
+TARGET	net/Makefile	/^TARGET = libnet.a$/;"	m
+TESTS	base/logger/test/Makefile	/^TESTS= test_Logger test_Format$/;"	m
+TESTS	example/client/Makefile	/^TESTS = client server$/;"	m
+TESTS	example/server/Makefile	/^TESTS = server$/;"	m
+TESTS	net/example/Makefile	/^TESTS = client server$/;"	m
+TEXT_ELEMENT	base/xmlparse/tinyxml2.h	/^        TEXT_ELEMENT		            	= NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION,$/;"	e	enum:tinyxml2::StrPair::__anon1
+TEXT_ELEMENT_LEAVE_ENTITIES	base/xmlparse/tinyxml2.h	/^        TEXT_ELEMENT_LEAVE_ENTITIES		= NEEDS_NEWLINE_NORMALIZATION,$/;"	e	enum:tinyxml2::StrPair::__anon1
+TINYXML2_INCLUDED	base/xmlparse/tinyxml2.h	25;"	d
+TINYXML2_LIB	base/xmlparse/tinyxml2.h	65;"	d
+TINYXML2_LIB	base/xmlparse/tinyxml2.h	67;"	d
+TINYXML2_LIB	base/xmlparse/tinyxml2.h	69;"	d
+TINYXML2_LIB	base/xmlparse/tinyxml2.h	72;"	d
+TIXML2_MAJOR_VERSION	base/xmlparse/tinyxml2.h	/^static const int TIXML2_MAJOR_VERSION = 3;$/;"	v
+TIXML2_MINOR_VERSION	base/xmlparse/tinyxml2.h	/^static const int TIXML2_MINOR_VERSION = 0;$/;"	v
+TIXML2_PATCH_VERSION	base/xmlparse/tinyxml2.h	/^static const int TIXML2_PATCH_VERSION = 0;$/;"	v
+TIXMLASSERT	base/xmlparse/tinyxml2.h	79;"	d
+TIXMLASSERT	base/xmlparse/tinyxml2.h	82;"	d
+TIXMLASSERT	base/xmlparse/tinyxml2.h	85;"	d
+TIXMLASSERT	base/xmlparse/tinyxml2.h	88;"	d
+TIXML_SNPRINTF	base/xmlparse/tinyxml2.cpp	/^	static inline int TIXML_SNPRINTF( char* buffer, size_t size, const char* format, ... )$/;"	f	file:
+TIXML_SNPRINTF	base/xmlparse/tinyxml2.cpp	63;"	d	file:
+TIXML_SNPRINTF	base/xmlparse/tinyxml2.cpp	92;"	d	file:
+TIXML_SSCANF	base/xmlparse/tinyxml2.cpp	100;"	d	file:
+TIXML_SSCANF	base/xmlparse/tinyxml2.cpp	60;"	d	file:
+TIXML_SSCANF	base/xmlparse/tinyxml2.cpp	65;"	d	file:
+TIXML_UTF_LEAD_0	base/xmlparse/tinyxml2.cpp	/^static const unsigned char TIXML_UTF_LEAD_0 = 0xefU;$/;"	v	file:
+TIXML_UTF_LEAD_1	base/xmlparse/tinyxml2.cpp	/^static const unsigned char TIXML_UTF_LEAD_1 = 0xbbU;$/;"	v	file:
+TIXML_UTF_LEAD_2	base/xmlparse/tinyxml2.cpp	/^static const unsigned char TIXML_UTF_LEAD_2 = 0xbfU;$/;"	v	file:
+TIXML_VSCPRINTF	base/xmlparse/tinyxml2.cpp	/^		static inline int TIXML_VSCPRINTF( const char* format, va_list va )$/;"	f	file:
+TIXML_VSCPRINTF	base/xmlparse/tinyxml2.cpp	/^	static inline int TIXML_VSCPRINTF( const char* format, va_list va )$/;"	f	file:
+TIXML_VSCPRINTF	base/xmlparse/tinyxml2.cpp	59;"	d	file:
+TIXML_VSCPRINTF	base/xmlparse/tinyxml2.cpp	68;"	d	file:
+TIXML_VSNPRINTF	base/xmlparse/tinyxml2.cpp	/^	static inline int TIXML_VSNPRINTF( char* buffer, size_t size, const char* format, va_list va )$/;"	f	file:
+TIXML_VSNPRINTF	base/xmlparse/tinyxml2.cpp	64;"	d	file:
+TIXML_VSNPRINTF	base/xmlparse/tinyxml2.cpp	93;"	d	file:
+ToBool	base/xmlparse/tinyxml2.cpp	/^bool XMLUtil::ToBool( const char* str, bool* value )$/;"	f	class:tinyxml2::XMLUtil
+ToComment	base/xmlparse/tinyxml2.h	/^    virtual XMLComment*		ToComment()		{$/;"	f	class:tinyxml2::XMLNode
+ToComment	base/xmlparse/tinyxml2.h	/^    virtual XMLComment*	ToComment()					{$/;"	f	class:tinyxml2::XMLComment
+ToComment	base/xmlparse/tinyxml2.h	/^    virtual const XMLComment*		ToComment() const		{$/;"	f	class:tinyxml2::XMLNode
+ToComment	base/xmlparse/tinyxml2.h	/^    virtual const XMLComment* ToComment() const		{$/;"	f	class:tinyxml2::XMLComment
+ToDeclaration	base/xmlparse/tinyxml2.h	/^    XMLDeclaration* ToDeclaration() 			{$/;"	f	class:tinyxml2::XMLHandle
+ToDeclaration	base/xmlparse/tinyxml2.h	/^    const XMLDeclaration* ToDeclaration() const	{$/;"	f	class:tinyxml2::XMLConstHandle
+ToDeclaration	base/xmlparse/tinyxml2.h	/^    virtual XMLDeclaration*	ToDeclaration()					{$/;"	f	class:tinyxml2::XMLDeclaration
+ToDeclaration	base/xmlparse/tinyxml2.h	/^    virtual XMLDeclaration*	ToDeclaration()	{$/;"	f	class:tinyxml2::XMLNode
+ToDeclaration	base/xmlparse/tinyxml2.h	/^    virtual const XMLDeclaration*	ToDeclaration() const	{$/;"	f	class:tinyxml2::XMLNode
+ToDeclaration	base/xmlparse/tinyxml2.h	/^    virtual const XMLDeclaration* ToDeclaration() const		{$/;"	f	class:tinyxml2::XMLDeclaration
+ToDocument	base/xmlparse/tinyxml2.h	/^    virtual XMLDocument*	ToDocument()	{$/;"	f	class:tinyxml2::XMLNode
+ToDocument	base/xmlparse/tinyxml2.h	/^    virtual XMLDocument* ToDocument()				{$/;"	f	class:tinyxml2::XMLDocument
+ToDocument	base/xmlparse/tinyxml2.h	/^    virtual const XMLDocument*		ToDocument() const		{$/;"	f	class:tinyxml2::XMLNode
+ToDocument	base/xmlparse/tinyxml2.h	/^    virtual const XMLDocument* ToDocument() const	{$/;"	f	class:tinyxml2::XMLDocument
+ToDouble	base/xmlparse/tinyxml2.cpp	/^bool XMLUtil::ToDouble( const char* str, double* value )$/;"	f	class:tinyxml2::XMLUtil
+ToElement	base/xmlparse/tinyxml2.h	/^    XMLElement* ToElement() 					{$/;"	f	class:tinyxml2::XMLHandle
+ToElement	base/xmlparse/tinyxml2.h	/^    const XMLElement* ToElement() const			{$/;"	f	class:tinyxml2::XMLConstHandle
+ToElement	base/xmlparse/tinyxml2.h	/^    virtual XMLElement*		ToElement()		{$/;"	f	class:tinyxml2::XMLNode
+ToElement	base/xmlparse/tinyxml2.h	/^    virtual XMLElement* ToElement()				{$/;"	f	class:tinyxml2::XMLElement
+ToElement	base/xmlparse/tinyxml2.h	/^    virtual const XMLElement*		ToElement() const		{$/;"	f	class:tinyxml2::XMLNode
+ToElement	base/xmlparse/tinyxml2.h	/^    virtual const XMLElement* ToElement() const {$/;"	f	class:tinyxml2::XMLElement
+ToFloat	base/xmlparse/tinyxml2.cpp	/^bool XMLUtil::ToFloat( const char* str, float* value )$/;"	f	class:tinyxml2::XMLUtil
+ToInt	base/xmlparse/tinyxml2.cpp	/^bool XMLUtil::ToInt( const char* str, int* value )$/;"	f	class:tinyxml2::XMLUtil
+ToNode	base/xmlparse/tinyxml2.h	/^    XMLNode* ToNode()							{$/;"	f	class:tinyxml2::XMLHandle
+ToNode	base/xmlparse/tinyxml2.h	/^    const XMLNode* ToNode() const				{$/;"	f	class:tinyxml2::XMLConstHandle
+ToStr	base/xmlparse/tinyxml2.cpp	/^void XMLUtil::ToStr( bool v, char* buffer, int bufferSize )$/;"	f	class:tinyxml2::XMLUtil
+ToStr	base/xmlparse/tinyxml2.cpp	/^void XMLUtil::ToStr( double v, char* buffer, int bufferSize )$/;"	f	class:tinyxml2::XMLUtil
+ToStr	base/xmlparse/tinyxml2.cpp	/^void XMLUtil::ToStr( float v, char* buffer, int bufferSize )$/;"	f	class:tinyxml2::XMLUtil
+ToStr	base/xmlparse/tinyxml2.cpp	/^void XMLUtil::ToStr( int v, char* buffer, int bufferSize )$/;"	f	class:tinyxml2::XMLUtil
+ToStr	base/xmlparse/tinyxml2.cpp	/^void XMLUtil::ToStr( unsigned v, char* buffer, int bufferSize )$/;"	f	class:tinyxml2::XMLUtil
+ToText	base/xmlparse/tinyxml2.h	/^    XMLText* ToText() 							{$/;"	f	class:tinyxml2::XMLHandle
+ToText	base/xmlparse/tinyxml2.h	/^    const XMLText* ToText() const				{$/;"	f	class:tinyxml2::XMLConstHandle
+ToText	base/xmlparse/tinyxml2.h	/^    virtual XMLText*		ToText()		{$/;"	f	class:tinyxml2::XMLNode
+ToText	base/xmlparse/tinyxml2.h	/^    virtual XMLText* ToText()			{$/;"	f	class:tinyxml2::XMLText
+ToText	base/xmlparse/tinyxml2.h	/^    virtual const XMLText*			ToText() const			{$/;"	f	class:tinyxml2::XMLNode
+ToText	base/xmlparse/tinyxml2.h	/^    virtual const XMLText* ToText() const	{$/;"	f	class:tinyxml2::XMLText
+ToUnknown	base/xmlparse/tinyxml2.h	/^    XMLUnknown* ToUnknown() 					{$/;"	f	class:tinyxml2::XMLHandle
+ToUnknown	base/xmlparse/tinyxml2.h	/^    const XMLUnknown* ToUnknown() const			{$/;"	f	class:tinyxml2::XMLConstHandle
+ToUnknown	base/xmlparse/tinyxml2.h	/^    virtual XMLUnknown*		ToUnknown()		{$/;"	f	class:tinyxml2::XMLNode
+ToUnknown	base/xmlparse/tinyxml2.h	/^    virtual XMLUnknown*	ToUnknown()					{$/;"	f	class:tinyxml2::XMLUnknown
+ToUnknown	base/xmlparse/tinyxml2.h	/^    virtual const XMLUnknown*		ToUnknown() const		{$/;"	f	class:tinyxml2::XMLNode
+ToUnknown	base/xmlparse/tinyxml2.h	/^    virtual const XMLUnknown* ToUnknown() const		{$/;"	f	class:tinyxml2::XMLUnknown
+ToUnsigned	base/xmlparse/tinyxml2.cpp	/^bool XMLUtil::ToUnsigned( const char* str, unsigned *value )$/;"	f	class:tinyxml2::XMLUtil
+Trace	base/xmlparse/tinyxml2.h	/^    void Trace( const char* name ) {$/;"	f	class:tinyxml2::MemPoolT
+TransferTo	base/xmlparse/tinyxml2.cpp	/^void StrPair::TransferTo( StrPair* other )$/;"	f	class:tinyxml2::StrPair
+Unlink	base/xmlparse/tinyxml2.cpp	/^void XMLNode::Unlink( XMLNode* child )$/;"	f	class:tinyxml2::XMLNode
+UnsignedAttribute	base/xmlparse/tinyxml2.h	/^    unsigned UnsignedAttribute( const char* name ) const {$/;"	f	class:tinyxml2::XMLElement
+UnsignedValue	base/xmlparse/tinyxml2.h	/^    unsigned UnsignedValue() const			{$/;"	f	class:tinyxml2::XMLAttribute
+Untracked	base/xmlparse/tinyxml2.h	/^    int Untracked() const {$/;"	f	class:tinyxml2::MemPoolT
+Value	base/xmlparse/tinyxml2.cpp	/^const char* XMLAttribute::Value() const $/;"	f	class:tinyxml2::XMLAttribute
+Value	base/xmlparse/tinyxml2.cpp	/^const char* XMLNode::Value() const $/;"	f	class:tinyxml2::XMLNode
+Visit	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::Visit( const XMLComment& comment )$/;"	f	class:tinyxml2::XMLPrinter
+Visit	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::Visit( const XMLDeclaration& declaration )$/;"	f	class:tinyxml2::XMLPrinter
+Visit	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::Visit( const XMLText& text )$/;"	f	class:tinyxml2::XMLPrinter
+Visit	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::Visit( const XMLUnknown& unknown )$/;"	f	class:tinyxml2::XMLPrinter
+Visit	base/xmlparse/tinyxml2.h	/^    virtual bool Visit( const XMLComment& \/*comment*\/ )				{$/;"	f	class:tinyxml2::XMLVisitor
+Visit	base/xmlparse/tinyxml2.h	/^    virtual bool Visit( const XMLDeclaration& \/*declaration*\/ )		{$/;"	f	class:tinyxml2::XMLVisitor
+Visit	base/xmlparse/tinyxml2.h	/^    virtual bool Visit( const XMLText& \/*text*\/ )					{$/;"	f	class:tinyxml2::XMLVisitor
+Visit	base/xmlparse/tinyxml2.h	/^    virtual bool Visit( const XMLUnknown& \/*unknown*\/ )				{$/;"	f	class:tinyxml2::XMLVisitor
+VisitEnter	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::VisitEnter( const XMLDocument& doc )$/;"	f	class:tinyxml2::XMLPrinter
+VisitEnter	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::VisitEnter( const XMLElement& element, const XMLAttribute* attribute )$/;"	f	class:tinyxml2::XMLPrinter
+VisitEnter	base/xmlparse/tinyxml2.h	/^    virtual bool VisitEnter( const XMLDocument& \/*doc*\/ )			{$/;"	f	class:tinyxml2::XMLVisitor
+VisitEnter	base/xmlparse/tinyxml2.h	/^    virtual bool VisitEnter( const XMLElement& \/*element*\/, const XMLAttribute* \/*firstAttribute*\/ )	{$/;"	f	class:tinyxml2::XMLVisitor
+VisitExit	base/xmlparse/tinyxml2.cpp	/^bool XMLPrinter::VisitExit( const XMLElement& element )$/;"	f	class:tinyxml2::XMLPrinter
+VisitExit	base/xmlparse/tinyxml2.h	/^    virtual bool VisitExit( const XMLDocument& \/*doc*\/ )			{$/;"	f	class:tinyxml2::XMLPrinter
+VisitExit	base/xmlparse/tinyxml2.h	/^    virtual bool VisitExit( const XMLDocument& \/*doc*\/ )			{$/;"	f	class:tinyxml2::XMLVisitor
+VisitExit	base/xmlparse/tinyxml2.h	/^    virtual bool VisitExit( const XMLElement& \/*element*\/ )			{$/;"	f	class:tinyxml2::XMLVisitor
+WALLE_BASE_LOGGER_HPP	base/logger/logger.h	8;"	d
+WALLE_CMD_TESTCMD_H	cmd/testcmd.h	2;"	d
+WALLE_NET_ACCEPTOR_H	net/acceptor.h	10;"	d
+WALLE_NET_CONNECTOR_H	net/connector.h	10;"	d
+WALLE_NET_ENDPOINT_H	net/endpoint.h	9;"	d
+WALLE_NET_EVENTLOOP_H	net/eventloop.h	10;"	d
+WALLE_NET_NET_H	net/net.h	3;"	d
+WALLE_NET_SOCKET_H	net/socket.h	9;"	d
+WALLE_NET_SOCK_OP_H	net/sock_op.h	9;"	d
+WALLE_SAFE_DEFINE_H	base/safe_define.h	10;"	d
+WATER_BASE_BACKEND_LOGGER_HPP	base/logger/backend_logger.h	2;"	d
+WATER_BASE_FORMAT_HPP	base/format.h	9;"	d
+WATER_BASE_LOG_BUFFER_HPP	base/logger/log_buffer.h	2;"	d
+WATER_BASE_LOG_FILE_HPP	base/logger/log_file.h	2;"	d
+WATER_BASE_XMLPARSE_H	base/xmlparse/xmlparse.h	10;"	d
+Whitespace	base/xmlparse/tinyxml2.h	/^enum Whitespace {$/;"	g	namespace:tinyxml2
+WhitespaceMode	base/xmlparse/tinyxml2.h	/^    Whitespace WhitespaceMode() const	{$/;"	f	class:tinyxml2::XMLDocument
+XMLAttribute	base/xmlparse/tinyxml2.h	/^    XMLAttribute() : _next( 0 ), _memPool( 0 ) {}$/;"	f	class:tinyxml2::XMLAttribute
+XMLAttribute	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLAttribute$/;"	c	namespace:tinyxml2
+XMLComment	base/xmlparse/tinyxml2.cpp	/^XMLComment::XMLComment( XMLDocument* doc ) : XMLNode( doc )$/;"	f	class:tinyxml2::XMLComment
+XMLComment	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLComment : public XMLNode$/;"	c	namespace:tinyxml2
+XMLConstHandle	base/xmlparse/tinyxml2.h	/^    XMLConstHandle( const XMLConstHandle& ref )										{$/;"	f	class:tinyxml2::XMLConstHandle
+XMLConstHandle	base/xmlparse/tinyxml2.h	/^    XMLConstHandle( const XMLNode& node )											{$/;"	f	class:tinyxml2::XMLConstHandle
+XMLConstHandle	base/xmlparse/tinyxml2.h	/^    XMLConstHandle( const XMLNode* node )											{$/;"	f	class:tinyxml2::XMLConstHandle
+XMLConstHandle	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLConstHandle$/;"	c	namespace:tinyxml2
+XMLDeclaration	base/xmlparse/tinyxml2.cpp	/^XMLDeclaration::XMLDeclaration( XMLDocument* doc ) : XMLNode( doc )$/;"	f	class:tinyxml2::XMLDeclaration
+XMLDeclaration	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLDeclaration : public XMLNode$/;"	c	namespace:tinyxml2
+XMLDocument	base/xmlparse/tinyxml2.cpp	/^XMLDocument::XMLDocument( bool processEntities, Whitespace whitespace ) :$/;"	f	class:tinyxml2::XMLDocument
+XMLDocument	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLDocument : public XMLNode$/;"	c	namespace:tinyxml2
+XMLElement	base/xmlparse/tinyxml2.cpp	/^XMLElement::XMLElement( XMLDocument* doc ) : XMLNode( doc ),$/;"	f	class:tinyxml2::XMLElement
+XMLElement	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLElement : public XMLNode$/;"	c	namespace:tinyxml2
+XMLError	base/xmlparse/tinyxml2.h	/^enum XMLError {$/;"	g	namespace:tinyxml2
+XMLHandle	base/xmlparse/tinyxml2.h	/^    XMLHandle( XMLNode& node )												{$/;"	f	class:tinyxml2::XMLHandle
+XMLHandle	base/xmlparse/tinyxml2.h	/^    XMLHandle( XMLNode* node )												{$/;"	f	class:tinyxml2::XMLHandle
+XMLHandle	base/xmlparse/tinyxml2.h	/^    XMLHandle( const XMLHandle& ref )										{$/;"	f	class:tinyxml2::XMLHandle
+XMLHandle	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLHandle$/;"	c	namespace:tinyxml2
+XMLNode	base/xmlparse/tinyxml2.cpp	/^XMLNode::XMLNode( XMLDocument* doc ) :$/;"	f	class:tinyxml2::XMLNode
+XMLNode	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLNode$/;"	c	namespace:tinyxml2
+XMLPrinter	base/xmlparse/tinyxml2.cpp	/^XMLPrinter::XMLPrinter( FILE* file, bool compact, int depth ) :$/;"	f	class:tinyxml2::XMLPrinter
+XMLPrinter	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLPrinter : public XMLVisitor$/;"	c	namespace:tinyxml2
+XMLText	base/xmlparse/tinyxml2.h	/^    XMLText( XMLDocument* doc )	: XMLNode( doc ), _isCData( false )	{}$/;"	f	class:tinyxml2::XMLText
+XMLText	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLText : public XMLNode$/;"	c	namespace:tinyxml2
+XMLUnknown	base/xmlparse/tinyxml2.cpp	/^XMLUnknown::XMLUnknown( XMLDocument* doc ) : XMLNode( doc )$/;"	f	class:tinyxml2::XMLUnknown
+XMLUnknown	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLUnknown : public XMLNode$/;"	c	namespace:tinyxml2
+XMLUtil	base/xmlparse/tinyxml2.h	/^class XMLUtil$/;"	c	namespace:tinyxml2
+XMLVisitor	base/xmlparse/tinyxml2.h	/^class TINYXML2_LIB XMLVisitor$/;"	c	namespace:tinyxml2
+XML_CAN_NOT_CONVERT_TEXT	base/xmlparse/tinyxml2.h	/^    XML_CAN_NOT_CONVERT_TEXT,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_COUNT	base/xmlparse/tinyxml2.h	/^	XML_ERROR_COUNT$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_ELEMENT_MISMATCH	base/xmlparse/tinyxml2.h	/^    XML_ERROR_ELEMENT_MISMATCH,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_EMPTY_DOCUMENT	base/xmlparse/tinyxml2.h	/^    XML_ERROR_EMPTY_DOCUMENT,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_FILE_COULD_NOT_BE_OPENED	base/xmlparse/tinyxml2.h	/^    XML_ERROR_FILE_COULD_NOT_BE_OPENED,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_FILE_NOT_FOUND	base/xmlparse/tinyxml2.h	/^    XML_ERROR_FILE_NOT_FOUND,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_FILE_READ_ERROR	base/xmlparse/tinyxml2.h	/^    XML_ERROR_FILE_READ_ERROR,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_IDENTIFYING_TAG	base/xmlparse/tinyxml2.h	/^    XML_ERROR_IDENTIFYING_TAG,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_MISMATCHED_ELEMENT	base/xmlparse/tinyxml2.h	/^    XML_ERROR_MISMATCHED_ELEMENT,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_ATTRIBUTE	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_ATTRIBUTE,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_CDATA	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_CDATA,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_COMMENT	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_COMMENT,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_DECLARATION	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_DECLARATION,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_ELEMENT	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_ELEMENT,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_TEXT	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_TEXT,$/;"	e	enum:tinyxml2::XMLError
+XML_ERROR_PARSING_UNKNOWN	base/xmlparse/tinyxml2.h	/^    XML_ERROR_PARSING_UNKNOWN,$/;"	e	enum:tinyxml2::XMLError
+XML_NO_ATTRIBUTE	base/xmlparse/tinyxml2.h	/^    XML_NO_ATTRIBUTE,$/;"	e	enum:tinyxml2::XMLError
+XML_NO_ERROR	base/xmlparse/tinyxml2.h	/^    XML_NO_ERROR = 0,$/;"	e	enum:tinyxml2::XMLError
+XML_NO_TEXT_NODE	base/xmlparse/tinyxml2.h	/^    XML_NO_TEXT_NODE,$/;"	e	enum:tinyxml2::XMLError
+XML_SUCCESS	base/xmlparse/tinyxml2.h	/^    XML_SUCCESS = 0,$/;"	e	enum:tinyxml2::XMLError
+XML_WRONG_ATTRIBUTE_TYPE	base/xmlparse/tinyxml2.h	/^    XML_WRONG_ATTRIBUTE_TYPE,$/;"	e	enum:tinyxml2::XMLError
+XmlParseDoc	base/xmlparse/xmlparse.cpp	/^XmlParseDoc::XmlParseDoc(const char* filename)$/;"	f	class:XmlParseDoc
+XmlParseDoc	base/xmlparse/xmlparse.h	/^class XmlParseDoc$/;"	c	namespace:walle::base
+XmlParseNode	base/xmlparse/xmlparse.cpp	/^XmlParseNode::XmlParseNode(XMLElement* ele)$/;"	f	class:XmlParseNode
+XmlParseNode	base/xmlparse/xmlparse.h	/^class XmlParseNode$/;"	c	namespace:walle::base
+_allocated	base/xmlparse/tinyxml2.h	/^    int _allocated;		\/\/ objects allocated$/;"	m	class:tinyxml2::DynArray
+_attributePool	base/xmlparse/tinyxml2.h	/^    MemPoolT< sizeof(XMLAttribute) > _attributePool;$/;"	m	class:tinyxml2::XMLDocument
+_blockPtrs	base/xmlparse/tinyxml2.h	/^    DynArray< Block*, 10 > _blockPtrs;$/;"	m	class:tinyxml2::MemPoolT
+_buffer	base/xmlparse/tinyxml2.h	/^    DynArray< char, 20 > _buffer;$/;"	m	class:tinyxml2::XMLPrinter
+_charBuffer	base/xmlparse/tinyxml2.h	/^    char*       _charBuffer;$/;"	m	class:tinyxml2::XMLDocument
+_closingType	base/xmlparse/tinyxml2.h	/^    int _closingType;$/;"	m	class:tinyxml2::XMLElement
+_commentPool	base/xmlparse/tinyxml2.h	/^    MemPoolT< sizeof(XMLComment) >	 _commentPool;$/;"	m	class:tinyxml2::XMLDocument
+_compactMode	base/xmlparse/tinyxml2.h	/^	bool _compactMode;$/;"	m	class:tinyxml2::XMLPrinter
+_currentAllocs	base/xmlparse/tinyxml2.h	/^    int _currentAllocs;$/;"	m	class:tinyxml2::MemPoolT
+_depth	base/xmlparse/tinyxml2.h	/^    int _depth;$/;"	m	class:tinyxml2::XMLPrinter
+_document	base/xmlparse/tinyxml2.h	/^    XMLDocument*	_document;$/;"	m	class:tinyxml2::XMLNode
+_elementJustOpened	base/xmlparse/tinyxml2.h	/^    bool _elementJustOpened;$/;"	m	class:tinyxml2::XMLPrinter
+_elementPool	base/xmlparse/tinyxml2.h	/^    MemPoolT< sizeof(XMLElement) >	 _elementPool;$/;"	m	class:tinyxml2::XMLDocument
+_end	base/xmlparse/tinyxml2.h	/^    char*   _end;$/;"	m	class:tinyxml2::StrPair
+_entityFlag	base/xmlparse/tinyxml2.h	/^    bool _entityFlag[ENTITY_RANGE];$/;"	m	class:tinyxml2::XMLPrinter
+_errorID	base/xmlparse/tinyxml2.h	/^    XMLError    _errorID;$/;"	m	class:tinyxml2::XMLDocument
+_errorNames	base/xmlparse/tinyxml2.cpp	/^const char* XMLDocument::_errorNames[XML_ERROR_COUNT] = {$/;"	m	class:tinyxml2::XMLDocument	file:
+_errorNames	base/xmlparse/tinyxml2.h	/^	static const char* _errorNames[XML_ERROR_COUNT];$/;"	m	class:tinyxml2::XMLDocument
+_errorStr1	base/xmlparse/tinyxml2.h	/^    const char* _errorStr1;$/;"	m	class:tinyxml2::XMLDocument
+_errorStr2	base/xmlparse/tinyxml2.h	/^    const char* _errorStr2;$/;"	m	class:tinyxml2::XMLDocument
+_firstChild	base/xmlparse/tinyxml2.h	/^    XMLNode*		_firstChild;$/;"	m	class:tinyxml2::XMLNode
+_firstElement	base/xmlparse/tinyxml2.h	/^    bool _firstElement;$/;"	m	class:tinyxml2::XMLPrinter
+_flags	base/xmlparse/tinyxml2.h	/^    int     _flags;$/;"	m	class:tinyxml2::StrPair
+_fp	base/xmlparse/tinyxml2.h	/^    FILE* _fp;$/;"	m	class:tinyxml2::XMLPrinter
+_isCData	base/xmlparse/tinyxml2.h	/^    bool _isCData;$/;"	m	class:tinyxml2::XMLText
+_lastChild	base/xmlparse/tinyxml2.h	/^    XMLNode*		_lastChild;$/;"	m	class:tinyxml2::XMLNode
+_maxAllocs	base/xmlparse/tinyxml2.h	/^    int _maxAllocs;$/;"	m	class:tinyxml2::MemPoolT
+_mem	base/xmlparse/tinyxml2.h	/^    T*  _mem;$/;"	m	class:tinyxml2::DynArray
+_memPool	base/xmlparse/tinyxml2.h	/^    MemPool*		_memPool;$/;"	m	class:tinyxml2::XMLNode
+_memPool	base/xmlparse/tinyxml2.h	/^    MemPool*        _memPool;$/;"	m	class:tinyxml2::XMLAttribute
+_nAllocs	base/xmlparse/tinyxml2.h	/^    int _nAllocs;$/;"	m	class:tinyxml2::MemPoolT
+_nUntracked	base/xmlparse/tinyxml2.h	/^    int _nUntracked;$/;"	m	class:tinyxml2::MemPoolT
+_name	base/xmlparse/tinyxml2.h	/^    mutable StrPair _name;$/;"	m	class:tinyxml2::XMLAttribute
+_next	base/xmlparse/tinyxml2.h	/^    XMLAttribute*   _next;$/;"	m	class:tinyxml2::XMLAttribute
+_next	base/xmlparse/tinyxml2.h	/^    XMLNode*		_next;$/;"	m	class:tinyxml2::XMLNode
+_node	base/xmlparse/tinyxml2.h	/^    XMLNode* _node;$/;"	m	class:tinyxml2::XMLHandle
+_node	base/xmlparse/tinyxml2.h	/^    const XMLNode* _node;$/;"	m	class:tinyxml2::XMLConstHandle
+_parent	base/xmlparse/tinyxml2.h	/^    XMLNode*		_parent;$/;"	m	class:tinyxml2::XMLNode
+_pool	base/xmlparse/tinyxml2.h	/^    T   _pool[INITIAL_SIZE];$/;"	m	class:tinyxml2::DynArray
+_prev	base/xmlparse/tinyxml2.h	/^    XMLNode*		_prev;$/;"	m	class:tinyxml2::XMLNode
+_processEntities	base/xmlparse/tinyxml2.h	/^    bool        _processEntities;$/;"	m	class:tinyxml2::XMLDocument
+_processEntities	base/xmlparse/tinyxml2.h	/^    bool _processEntities;$/;"	m	class:tinyxml2::XMLPrinter
+_restrictedEntityFlag	base/xmlparse/tinyxml2.h	/^    bool _restrictedEntityFlag[ENTITY_RANGE];$/;"	m	class:tinyxml2::XMLPrinter
+_root	base/xmlparse/tinyxml2.h	/^    Chunk* _root;$/;"	m	class:tinyxml2::MemPoolT
+_rootAttribute	base/xmlparse/tinyxml2.h	/^    XMLAttribute* _rootAttribute;$/;"	m	class:tinyxml2::XMLElement
+_size	base/xmlparse/tinyxml2.h	/^    int _size;			\/\/ number objects in use$/;"	m	class:tinyxml2::DynArray
+_stack	base/xmlparse/tinyxml2.h	/^    DynArray< const char*, 10 > _stack;$/;"	m	class:tinyxml2::XMLPrinter
+_start	base/xmlparse/tinyxml2.h	/^    char*   _start;$/;"	m	class:tinyxml2::StrPair
+_textDepth	base/xmlparse/tinyxml2.h	/^    int _textDepth;$/;"	m	class:tinyxml2::XMLPrinter
+_textPool	base/xmlparse/tinyxml2.h	/^    MemPoolT< sizeof(XMLText) >		 _textPool;$/;"	m	class:tinyxml2::XMLDocument
+_value	base/xmlparse/tinyxml2.h	/^    mutable StrPair	_value;$/;"	m	class:tinyxml2::XMLNode
+_value	base/xmlparse/tinyxml2.h	/^    mutable StrPair _value;$/;"	m	class:tinyxml2::XMLAttribute
+_whitespace	base/xmlparse/tinyxml2.h	/^    Whitespace  _whitespace;$/;"	m	class:tinyxml2::XMLDocument
+_writeBOM	base/xmlparse/tinyxml2.h	/^    bool        _writeBOM;$/;"	m	class:tinyxml2::XMLDocument
+accept	net/acceptor.cpp	/^void Acceptor::accept()$/;"	f	class:Acceptor
+accept	net/socket.cpp	/^int32_t Socket::accept(Endpoint* endpoint)$/;"	f	class:Socket
+accept_ex	net/sock_op.cpp	/^int32_t sock_op::accept_ex(int32_t sockfd, Endpoint* cliendpoint)$/;"	f	class:sock_op
+add	net/sock_epoller.cpp	/^int Epoller::add(Socket* socket)$/;"	f	class:Epoller
+addConnection	net/socketserver.cpp	/^bool SocketServer::addConnection(Connection* con)$/;"	f	class:SocketServer
+append	base/logger/backend_logger.cpp	/^void BackendLogger::append(const char* msg, uint32_t len)$/;"	f	class:water::BackendLogger
+append	base/logger/log_file.cpp	/^void LogFile::append(const char* msg, const size_t len)$/;"	f	class:water::LogFile
+appendToString	base/format.h	/^appendToString(std::string* str, T arg)$/;"	f	namespace:water
+appendToString	base/format.h	/^appendToString(std::string* str, const T& arg)$/;"	f	namespace:water
+appendToString	base/format.h	/^inline void appendToString(std::string* str, const char* arg)$/;"	f	namespace:water
+appendToString	base/format.h	/^inline void appendToString(std::string* str, const std::string& arg)$/;"	f	namespace:water
+base	base/basecmd.h	/^namespace base{$/;"	n	namespace:walle
+base	base/cmd_dispatcher.h	/^namespace base{$/;"	n	namespace:walle
+base	base/xmlparse/xmlparse.h	/^namespace base{$/;"	n	namespace:walle
+baseid	base/basecmd.h	/^    uint32_t baseid = 0;$/;"	m	struct:walle::base::BaseCmd
+bench	base/logger/test/test_Logger.cpp	/^void bench(bool flag=false)$/;"	f
+bind	net/socket.cpp	/^void Socket::bind(Endpoint* endpoint)$/;"	f	class:Socket
+bind_ex	net/sock_op.cpp	/^int32_t sock_op::bind_ex(int32_t sockfd, const Endpoint& endpoint)$/;"	f	class:sock_op
+bkLogger	base/logger/test/test_Logger.cpp	/^std::shared_ptr<BackendLogger> bkLogger;$/;"	v
+callfopen	base/xmlparse/tinyxml2.cpp	/^static FILE* callfopen( const char* filepath, const char* mode )$/;"	f	namespace:tinyxml2
+chunk	base/xmlparse/tinyxml2.h	/^        Chunk chunk[COUNT];$/;"	m	struct:tinyxml2::MemPoolT::Block
+close_ex	net/sock_op.cpp	/^void sock_op::close_ex(int32_t sockfd)$/;"	f	class:sock_op
+cmd	cmd/testcmd.h	/^namespace cmd{$/;"	n
+connect	net/connector.cpp	/^Connection* Connector::connect()$/;"	f	class:Connector
+connect	net/socket.cpp	/^int32_t Socket::connect(Endpoint* endpoint)$/;"	f	class:Socket
+connect_ex	net/sock_op.cpp	/^int32_t sock_op::connect_ex(int32_t sockfd, Endpoint* srv_endpoint)$/;"	f	class:sock_op
+create_socket	net/sock_op.cpp	/^int32_t sock_op::create_socket()$/;"	f	class:sock_op
+cv	base/logger/test/test_ConditionVar.cpp	/^std::condition_variable cv;$/;"	v
+cv_m	base/logger/test/test_ConditionVar.cpp	/^std::mutex cv_m; \/\/ This mutex is used for three purposes:$/;"	v
+data	base/logger/log_buffer.h	/^    const char* data() { return m_data; }$/;"	f	class:water::LogBuffer
+defaultOutput	base/logger/logger.cpp	/^void defaultOutput(const char* msg, uint32_t len)$/;"	f	namespace:water
+defaultReadCallBack	net/socket.cpp	/^void Socket::defaultReadCallBack()$/;"	f	class:Socket
+del	net/sock_epoller.cpp	/^void Epoller::del(Socket* socket)$/;"	f	class:Epoller
+dispatch	base/cmd_dispatcher.h	/^    void dispatch(const BaseCmd* cmd, uint32_t len)$/;"	f	class:walle::base::CmdDispatcher
+dumpfunc	base/logger/test/test_Logger.cpp	/^void dumpfunc(const char* msg, uint32_t len)$/;"	f
+end	base/logger/log_buffer.h	/^    const char* end() const { return m_data + m_size; }$/;"	f	class:water::LogBuffer
+entities	base/xmlparse/tinyxml2.cpp	/^static const Entity entities[NUM_ENTITIES] = {$/;"	m	namespace:tinyxml2	file:
+fd	net/socket.h	/^    int32_t fd() const { return m_sockfd; }$/;"	f	class:walle::net::Socket
+final	net/socketserver.cpp	/^void SocketServer::final()$/;"	f	class:SocketServer
+foo	base/xmlparse/xmltest.cpp	/^void foo(XmlParseNode rootNode)$/;"	f
+format	base/format.h	/^std::string format(const std::string& formatStr, const Args&... args)$/;"	f	namespace:water
+formatClass	base/logger/test/test_Format.cpp	/^void formatClass()$/;"	f
+formatImpl	base/format.h	/^inline void formatImpl(std::string* str, const char* f)$/;"	f	namespace:water
+formatImpl	base/format.h	/^void formatImpl(std::string* str, const char* f, const T& firstArg, const Args&... args)$/;"	f	namespace:water
+formatStr	base/logger/test/test_Format.cpp	/^void formatStr()$/;"	f
+formatTime	base/logger/logger.cpp	/^void Logger::formatTime()$/;"	f	class:water::Logger
+fromIp	net/sock_op.cpp	/^void sock_op::fromIp(const char* ip, struct sockaddr_in* addr)$/;"	f	class:sock_op
+gLogger	base/logger/logger.cpp	/^water::Logger gLogger;$/;"	v
+g_file	base/logger/test/test_Logger.cpp	/^FILE* g_file;$/;"	v
+getAttr	base/xmlparse/xmlparse.h	/^        T getAttr(const char* name)$/;"	f	class:walle::base::XmlParseNode
+getAttrByType	base/xmlparse/xmlparse.h	/^        void getAttrByType(const char* name, bool* ret)$/;"	f	class:walle::base::XmlParseNode
+getAttrByType	base/xmlparse/xmlparse.h	/^        void getAttrByType(const char* name, double* ret)$/;"	f	class:walle::base::XmlParseNode
+getAttrByType	base/xmlparse/xmlparse.h	/^        void getAttrByType(const char* name, float* ret)$/;"	f	class:walle::base::XmlParseNode
+getAttrByType	base/xmlparse/xmlparse.h	/^        void getAttrByType(const char* name, int* ret)$/;"	f	class:walle::base::XmlParseNode
+getAttrByType	base/xmlparse/xmlparse.h	/^        void getAttrByType(const char* name, std::string* ret)$/;"	f	class:walle::base::XmlParseNode
+getAttrByType	base/xmlparse/xmlparse.h	/^        void getAttrByType(const char* name, unsigned int* ret)$/;"	f	class:walle::base::XmlParseNode
+getChild	base/xmlparse/xmlparse.cpp	/^XmlParseNode XmlParseNode::getChild(const char* name)$/;"	f	class:XmlParseNode
+getFileNameBynow	base/logger/log_file.cpp	/^std::string LogFile::getFileNameBynow()$/;"	f	class:water::LogFile
+getInetAddr	net/endpoint.h	/^    sockaddr_in getInetAddr() const{ return m_addr; }$/;"	f	class:walle::net::Endpoint
+getIp	net/endpoint.cpp	/^std::string Endpoint::getIp() const$/;"	f	class:Endpoint
+getLevelStr	base/logger/logger.cpp	/^const char* Logger::getLevelStr(LogLevel l)$/;"	f	class:water::Logger
+getPort	net/endpoint.cpp	/^uint16_t Endpoint::getPort() const$/;"	f	class:Endpoint
+getReadyPack	net/socket_buffer.cpp	/^int32_t SocketBuffer::getReadyPack()$/;"	f	class:SocketBuffer
+getRoot	base/xmlparse/xmlparse.cpp	/^XmlParseNode XmlParseDoc::getRoot()$/;"	f	class:XmlParseDoc
+getText	base/xmlparse/xmlparse.cpp	/^std::string XmlParseNode::getText()$/;"	f	class:XmlParseNode
+i	base/logger/test/test_ConditionVar.cpp	/^int i = 0;$/;"	v
+id	net/connection.h	/^    int32_t id() const { return m_id; }$/;"	f	class:walle::net::Connection
+init	net/acceptor.cpp	/^bool Acceptor::init(SocketServer* server, Poller* poller, uint16_t port)$/;"	f	class:Acceptor
+init	net/sock_poller.cpp	/^bool Poller::init()$/;"	f	class:Poller
+init	net/socketserver.cpp	/^bool SocketServer::init(uint16_t port)$/;"	f	class:SocketServer
+isReuseAddr	net/socket.cpp	/^bool Socket::isReuseAddr() const$/;"	f	class:Socket
+length	base/logger/log_buffer.h	/^    uint32_t length() const { return m_cur - m_data; }$/;"	f	class:water::LogBuffer
+length	base/xmlparse/tinyxml2.cpp	/^    int length;$/;"	m	struct:tinyxml2::Entity	file:
+level	base/logger/logger.h	/^    LogLevel level() const { return m_level; }$/;"	f	class:water::Logger
+listen	net/socket.cpp	/^void Socket::listen()$/;"	f	class:Socket
+listen_ex	net/sock_op.cpp	/^int32_t sock_op::listen_ex(int32_t sockfd)$/;"	f	class:sock_op
+load	base/logger/log_file.cpp	/^bool LogFile::load()$/;"	f	class:water::LogFile
+lock	base/logger/log_file.cpp	/^int32_t LogFile::lock()$/;"	f	class:water::LogFile
+log	base/logger/logger.h	/^    void log(LogLevel level, const char* file, int line,  Args... args)$/;"	f	class:water::Logger
+loop	net/eventloop.cpp	/^void EventLoop::loop()$/;"	f	class:EventLoop
+m_acceptor	net/socketserver.h	/^    Acceptor m_acceptor;$/;"	m	class:walle::net::SocketServer
+m_addr	net/endpoint.h	/^    struct sockaddr_in m_addr;$/;"	m	class:walle::net::Endpoint	typeref:struct:walle::net::Endpoint::sockaddr_in
+m_appendcb	base/logger/logger.h	/^    AppendCallback m_appendcb;$/;"	m	class:water::Logger
+m_buffer	net/socket_buffer.h	/^    std::vector<char> m_buffer;$/;"	m	class:walle::net::SocketBuffer
+m_cond	base/logger/backend_logger.h	/^    std::condition_variable m_cond;$/;"	m	class:water::BackendLogger
+m_cond	base/logger/log_file.h	/^    std::condition_variable m_cond;$/;"	m	class:water::LogFile
+m_connections	net/socketserver.h	/^    ConnectionMap m_connections;$/;"	m	class:walle::net::SocketServer
+m_cur	base/logger/log_buffer.h	/^    char* m_cur;$/;"	m	class:water::LogBuffer
+m_curBuf	base/logger/backend_logger.h	/^    BufferPtr m_curBuf;$/;"	m	class:water::BackendLogger
+m_curFilename	base/logger/log_file.h	/^    std::string m_curFilename;$/;"	m	class:water::LogFile
+m_data	base/logger/log_buffer.h	/^    char* m_data;$/;"	m	class:water::LogBuffer
+m_dispatcher	example/server/server.cpp	/^    CmdDispatcher m_dispatcher;$/;"	m	class:MyServer	file:
+m_doc	base/xmlparse/xmlparse.h	/^        std::shared_ptr<tinyxml2::XMLDocument> m_doc;$/;"	m	class:walle::base::XmlParseDoc
+m_ele	base/xmlparse/xmlparse.h	/^        tinyxml2::XMLElement* m_ele = nullptr;$/;"	m	class:walle::base::XmlParseNode
+m_endpoint	net/connection.h	/^    Endpoint m_endpoint;$/;"	m	class:walle::net::Connection
+m_endpoint	net/connector.h	/^    Endpoint m_endpoint;$/;"	m	class:walle::net::Connector
+m_fd	base/logger/log_file.h	/^    int32_t m_fd;$/;"	m	class:water::LogFile
+m_filename	base/logger/backend_logger.h	/^    std::string m_filename;$/;"	m	class:water::BackendLogger
+m_filename	base/logger/log_file.h	/^    std::string m_filename;$/;"	m	class:water::LogFile
+m_fullBufs	base/logger/backend_logger.h	/^    BufferVec m_fullBufs;$/;"	m	class:water::BackendLogger
+m_handlers	base/cmd_dispatcher.h	/^    std::map<uint32_t, CmdFunc> m_handlers;$/;"	m	class:walle::base::CmdDispatcher
+m_id	net/connection.h	/^    int32_t m_id = 0;$/;"	m	class:walle::net::Connection
+m_level	base/logger/logger.h	/^    LogLevel m_level;$/;"	m	class:water::Logger
+m_lock	base/logger/log_file.h	/^    struct flock m_lock { F_WRLCK, SEEK_SET, 0, 0, 0 };$/;"	s	class:water::LogFile
+m_logHour	base/logger/log_file.h	/^    int32_t m_logHour;$/;"	m	class:water::LogFile
+m_maxSize	net/socket_buffer.h	/^    uint32_t m_maxSize = 0;$/;"	m	class:walle::net::SocketBuffer
+m_mutex	base/logger/backend_logger.h	/^    std::mutex m_mutex;$/;"	m	class:water::BackendLogger
+m_mutex	base/logger/log_file.h	/^    std::mutex m_mutex;$/;"	m	class:water::LogFile
+m_nextBuf	base/logger/backend_logger.h	/^    BufferPtr m_nextBuf;$/;"	m	class:water::BackendLogger
+m_poller	net/acceptor.h	/^    Poller* m_poller = nullptr;$/;"	m	class:walle::net::Acceptor
+m_poller	net/socketserver.h	/^    Poller* m_poller = nullptr;$/;"	m	class:walle::net::SocketServer
+m_pollfd	net/sock_poller.h	/^    int32_t m_pollfd = -1;$/;"	m	class:walle::net::Poller
+m_readIndex	net/socket_buffer.h	/^    uint32_t m_readIndex = 0;$/;"	m	class:walle::net::SocketBuffer
+m_recvBuf	net/socket.h	/^    SocketBuffer m_recvBuf;$/;"	m	class:walle::net::Socket
+m_running	base/logger/backend_logger.h	/^    bool m_running;$/;"	m	class:water::BackendLogger
+m_sendBuf	net/socket.h	/^    SocketBuffer m_sendBuf;$/;"	m	class:walle::net::Socket
+m_server	net/acceptor.h	/^    SocketServer* m_server = nullptr;$/;"	m	class:walle::net::Acceptor
+m_size	base/logger/log_buffer.h	/^    uint32_t m_size;$/;"	m	class:water::LogBuffer
+m_socket	net/acceptor.h	/^    Socket m_socket;$/;"	m	class:walle::net::Acceptor
+m_socket	net/connection.h	/^    Socket m_socket;$/;"	m	class:walle::net::Connection
+m_sockfd	net/socket.h	/^    int32_t m_sockfd;$/;"	m	class:walle::net::Socket
+m_stream	base/logger/logger.cpp	/^thread_local LogStream m_stream;$/;"	m	namespace:water	file:
+m_thread	base/logger/backend_logger.h	/^    std::thread m_thread;$/;"	m	class:water::BackendLogger
+m_writeIndex	net/socket_buffer.h	/^    uint32_t m_writeIndex = 0;$/;"	m	class:walle::net::SocketBuffer
+main	base/logger/test/test_ConditionVar.cpp	/^int main()$/;"	f
+main	base/logger/test/test_FileLock.cpp	/^int main()$/;"	f
+main	base/logger/test/test_FileLock2.cpp	/^int main()$/;"	f
+main	base/logger/test/test_Format.cpp	/^int main()$/;"	f
+main	base/logger/test/test_LogBuffer.cpp	/^int main()$/;"	f
+main	base/logger/test/test_Logger.cpp	/^int main(int argc, char**argv)$/;"	f
+main	base/logger/test/test_Vector.cpp	/^int main()$/;"	f
+main	base/logger/test/test_WriteFile.cpp	/^int main()$/;"	f
+main	base/xmlparse/resources/mytest.cpp	/^int main(int argc, char** argv)$/;"	f
+main	base/xmlparse/xmltest.cpp	/^int main()$/;"	f
+main	example/client/client.cpp	/^int main()$/;"	f
+main	example/client/server.cpp	/^int main()$/;"	f
+main	example/client/socket_client.cpp	/^int main()$/;"	f
+main	example/client/socket_srv_test.cpp	/^int main()$/;"	f
+main	example/client/socket_test.cpp	/^int main()$/;"	f
+main	example/client/tcpserver_test.cpp	/^int main()$/;"	f
+main	example/server/server.cpp	/^int main(int argc, char** argv)$/;"	f
+main	net/example/client.cpp	/^int main()$/;"	f
+main	net/example/server.cpp	/^int main()$/;"	f
+main	net/example/socket_client.cpp	/^int main()$/;"	f
+main	net/example/socket_srv_test.cpp	/^int main()$/;"	f
+main	net/example/socket_test.cpp	/^int main()$/;"	f
+main	net/example/tcpserver_test.cpp	/^int main()$/;"	f
+mem	base/xmlparse/tinyxml2.h	/^        char    mem[SIZE];$/;"	m	union:tinyxml2::MemPoolT::Chunk
+moveSpace	net/socket_buffer.cpp	/^void SocketBuffer::moveSpace()$/;"	f	class:SocketBuffer
+msgParse	net/socketserver.cpp	/^void SocketServer::msgParse()$/;"	f	class:SocketServer
+name	cmd/testcmd.h	/^    char name[128] = {0};$/;"	m	struct:cmd::MSG_clienttest
+net	net/acceptor.h	/^namespace net{$/;"	n	namespace:walle
+net	net/connection.h	/^namespace net{$/;"	n	namespace:walle
+net	net/connector.h	/^namespace net{$/;"	n	namespace:walle
+net	net/endpoint.h	/^namespace net{$/;"	n	namespace:walle
+net	net/eventloop.h	/^namespace net{$/;"	n	namespace:walle
+net	net/sock_epoller.h	/^namespace net{$/;"	n	namespace:walle
+net	net/sock_op.h	/^namespace net{$/;"	n	namespace:walle
+net	net/sock_poller.h	/^namespace net{$/;"	n	namespace:walle
+net	net/socket.h	/^namespace net{$/;"	n	namespace:walle
+net	net/socket_buffer.h	/^namespace net{$/;"	n	namespace:walle
+net	net/socketserver.h	/^namespace net{$/;"	n	namespace:walle
+next	base/xmlparse/tinyxml2.h	/^        Chunk*  next;$/;"	m	union:tinyxml2::MemPoolT::Chunk
+on_client_test	example/server/server.cpp	/^bool on_client_test(const walle::base::BaseCmd* cmd, uint32_t len)$/;"	f
+operator ++	base/xmlparse/xmlparse.h	/^        XmlParseNode& operator++()$/;"	f	class:walle::base::XmlParseNode
+operator <<	base/logger/test/test_Logger.cpp	/^LogStream& operator << (LogStream& ss, stFoo& foo)$/;"	f
+operator =	base/xmlparse/tinyxml2.h	/^    XMLConstHandle& operator=( const XMLConstHandle& ref )							{$/;"	f	class:tinyxml2::XMLConstHandle
+operator =	base/xmlparse/tinyxml2.h	/^    XMLHandle& operator=( const XMLHandle& ref )							{$/;"	f	class:tinyxml2::XMLHandle
+operator []	base/xmlparse/tinyxml2.h	/^    T& operator[](int i)				{$/;"	f	class:tinyxml2::DynArray
+operator []	base/xmlparse/tinyxml2.h	/^    const T& operator[](int i) const	{$/;"	f	class:tinyxml2::DynArray
+operator bool	base/xmlparse/xmlparse.h	/^        operator bool() const$/;"	f	class:walle::base::XmlParseNode
+override	net/sock_epoller.h	/^    virtual bool sp_invalid(poll_fd fd) override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual int add(Socket* socket) override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual int wait(int max) override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual poll_fd sp_create() override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual void del(Socket* socket) override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual void release() override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual void sp_nonblocking(int sock) override;$/;"	m	class:walle::net::Epoller
+override	net/sock_epoller.h	/^    virtual void sp_write(poll_fd, int sock, void *ud, bool enable) override;$/;"	m	class:walle::net::Epoller
+parseMsg	net/connection.cpp	/^void Connection::parseMsg()$/;"	f	class:Connection
+pattern	base/xmlparse/tinyxml2.cpp	/^    const char* pattern;$/;"	m	struct:tinyxml2::Entity	file:
+pollErrorCallBack	net/socket.h	/^    PollCallBack pollErrorCallBack;$/;"	m	class:walle::net::Socket
+pollReadCallBack	net/socket.h	/^    PollCallBack pollReadCallBack;$/;"	m	class:walle::net::Socket
+pollWriteCallBack	net/socket.h	/^    PollCallBack pollWriteCallBack;$/;"	m	class:walle::net::Socket
+poll_event	net/sock_poller.h	/^struct poll_event {$/;"	s	namespace:walle::net
+poll_fd	net/sock_poller.h	/^typedef int poll_fd;$/;"	t	namespace:walle::net
+put	base/logger/log_buffer.h	/^    void put(const char* msg, uint32_t len)$/;"	f	class:water::LogBuffer
+read	net/sock_poller.h	/^	bool read;$/;"	m	struct:walle::net::poll_event
+read	net/socket_buffer.cpp	/^uint32_t SocketBuffer::read(char* data, uint32_t maxlen)$/;"	f	class:SocketBuffer
+readFromBuf	net/socket.cpp	/^uint32_t Socket::readFromBuf(char* buf, uint32_t maxlen)$/;"	f	class:Socket
+recv	net/socket.cpp	/^int32_t Socket::recv(void* buf, int32_t bufLen)$/;"	f	class:Socket
+recvMsg	net/connection.cpp	/^void Connection::recvMsg()$/;"	f	class:Connection
+recv_ex	net/sock_op.cpp	/^int32_t sock_op::recv_ex(int32_t sockfd, void* buf, int32_t buflen)$/;"	f	class:sock_op
+reg	base/cmd_dispatcher.h	/^    void reg(uint32_t cmdid, CmdFunc fun)$/;"	f	class:walle::base::CmdDispatcher
+regCmdCB	example/server/server.cpp	/^    void regCmdCB(uint32_t cmdid, CmdDispatcher::CmdFunc func)$/;"	f	class:MyServer
+release	net/sock_epoller.cpp	/^void Epoller::release()$/;"	f	class:Epoller
+remain	base/logger/log_buffer.h	/^    uint32_t remain() const { return static_cast<uint32_t>(end() - m_cur); }$/;"	f	class:water::LogBuffer
+reset	base/logger/log_buffer.h	/^    void reset() { m_cur = m_data; }$/;"	f	class:water::LogBuffer
+reset_addr	net/endpoint.h	/^    void reset_addr() { bzero(&m_addr, sizeof(m_addr)); }$/;"	f	class:walle::net::Endpoint
+roll	base/logger/log_file.cpp	/^void LogFile::roll()$/;"	f	class:water::LogFile
+run	example/client/server.cpp	/^void run()$/;"	f
+run	net/example/server.cpp	/^void run()$/;"	f
+run	net/socketserver.cpp	/^void SocketServer::run()$/;"	f	class:SocketServer
+run_client	example/client/client.cpp	/^void run_client()$/;"	f
+run_client	example/client/socket_client.cpp	/^void run_client()$/;"	f
+run_client	example/client/socket_test.cpp	/^void run_client()$/;"	f
+run_client	net/example/client.cpp	/^void run_client()$/;"	f
+run_client	net/example/socket_client.cpp	/^void run_client()$/;"	f
+run_client	net/example/socket_test.cpp	/^void run_client()$/;"	f
+run_server	example/client/socket_srv_test.cpp	/^void run_server()$/;"	f
+run_server	example/client/socket_test.cpp	/^void run_server()$/;"	f
+run_server	net/example/socket_srv_test.cpp	/^void run_server()$/;"	f
+run_server	net/example/socket_test.cpp	/^void run_server()$/;"	f
+s	net/sock_poller.h	/^	void * s;$/;"	m	struct:walle::net::poll_event
+send	net/connection.cpp	/^int32_t Connection::send(const void* buf, int32_t len)$/;"	f	class:Connection
+send	net/socket.cpp	/^int32_t Socket::send(const void* buf, int32_t bufLen)$/;"	f	class:Socket
+send_ex	net/sock_op.cpp	/^int32_t sock_op::send_ex(int32_t sockfd, const void* buf, int32_t buflen)$/;"	f	class:sock_op
+setAppendCallback	base/logger/logger.h	/^    void setAppendCallback(AppendCallback cb){ m_appendcb = cb; }$/;"	f	class:water::Logger
+setFd	net/socket.h	/^    void setFd(int32_t sockfd) { m_sockfd = sockfd; }$/;"	f	class:walle::net::Socket
+setInetAddr	net/endpoint.h	/^    void setInetAddr(const struct sockaddr_in addr){ m_addr = addr; }$/;"	f	class:walle::net::Endpoint
+setLogLevel	base/logger/logger.h	/^    void setLogLevel(LogLevel l){ m_level = l; }$/;"	f	class:water::Logger
+setPollErrorCallBack	net/socket.cpp	/^void Socket::setPollErrorCallBack(PollCallBack cb)$/;"	f	class:Socket
+setPollReadCallBack	net/socket.cpp	/^void Socket::setPollReadCallBack(PollCallBack cb)$/;"	f	class:Socket
+setPollWriteCallBack	net/socket.cpp	/^void Socket::setPollWriteCallBack(PollCallBack cb)$/;"	f	class:Socket
+setReuseAddr	net/socket.cpp	/^void Socket::setReuseAddr(bool on)$/;"	f	class:Socket
+shutdown	net/socket.cpp	/^void Socket::shutdown()$/;"	f	class:Socket
+signals	base/logger/test/test_ConditionVar.cpp	/^void signals()$/;"	f
+sock_op	net/sock_op.h	/^namespace sock_op{$/;"	n	namespace:walle::net
+socket	net/connection.h	/^    Socket& socket() { return m_socket; }$/;"	f	class:walle::net::Connection
+sp_create	net/sock_epoller.cpp	/^int Epoller::sp_create()$/;"	f	class:Epoller
+sp_invalid	net/sock_epoller.cpp	/^bool Epoller::sp_invalid(int efd)$/;"	f	class:Epoller
+sp_nonblocking	net/sock_epoller.cpp	/^void Epoller::sp_nonblocking(int fd)$/;"	f	class:Epoller
+sp_write	net/sock_epoller.cpp	/^void Epoller::sp_write(int efd, int sock, void *ud, bool enable)$/;"	f	class:Epoller
+stFoo	base/logger/test/test_Logger.cpp	/^struct stFoo : public IFormartAble$/;"	s	file:
+start	base/logger/backend_logger.cpp	/^void BackendLogger::start()$/;"	f	class:water::BackendLogger
+stop	base/logger/backend_logger.h	/^    void stop()$/;"	f	class:water::BackendLogger
+subdir	Makefile	/^subdir = net base example$/;"	m
+subdir	base/logger/Makefile	/^subdir = test$/;"	m
+subdir	example/Makefile	/^subdir = server client$/;"	m
+t_lastSecond	base/logger/logger.cpp	/^thread_local time_t t_lastSecond;$/;"	m	namespace:water	file:
+t_time	base/logger/logger.cpp	/^thread_local char t_time[18];$/;"	m	namespace:water	file:
+threadFunc	base/logger/backend_logger.cpp	/^void BackendLogger::threadFunc()$/;"	f	class:water::BackendLogger
+time	cmd/testcmd.h	/^    uint32_t time = 0;$/;"	m	struct:cmd::MSG_clienttest
+timeNow	base/logger/log_file.cpp	/^tm LogFile::timeNow()$/;"	f	class:water::LogFile
+tinyxml2	base/xmlparse/tinyxml2.cpp	/^namespace tinyxml2$/;"	n	file:
+tinyxml2	base/xmlparse/tinyxml2.h	/^namespace tinyxml2$/;"	n
+toIp	net/sock_op.cpp	/^void sock_op::toIp(char* buf, size_t size, const struct sockaddr_in& addr)$/;"	f	class:sock_op
+unlock	base/logger/log_file.cpp	/^int32_t LogFile::unlock()$/;"	f	class:water::LogFile
+value	base/xmlparse/tinyxml2.cpp	/^    char value;$/;"	m	struct:tinyxml2::Entity	file:
+wait	net/sock_epoller.cpp	/^int Epoller::wait(int max)$/;"	f	class:Epoller
+waits	base/logger/test/test_ConditionVar.cpp	/^void waits()$/;"	f
+walle	base/basecmd.h	/^namespace walle{$/;"	n
+walle	base/cmd_dispatcher.h	/^namespace walle{$/;"	n
+walle	base/xmlparse/xmlparse.h	/^namespace walle{$/;"	n
+walle	net/acceptor.h	/^namespace walle{$/;"	n
+walle	net/connection.h	/^namespace walle{$/;"	n
+walle	net/connector.h	/^namespace walle{$/;"	n
+walle	net/endpoint.h	/^namespace walle{$/;"	n
+walle	net/eventloop.h	/^namespace walle{$/;"	n
+walle	net/sock_epoller.h	/^namespace walle{$/;"	n
+walle	net/sock_op.h	/^namespace walle{$/;"	n
+walle	net/sock_poller.h	/^namespace walle{$/;"	n
+walle	net/socket.h	/^namespace walle{$/;"	n
+walle	net/socket_buffer.h	/^namespace walle{$/;"	n
+walle	net/socketserver.h	/^namespace walle{$/;"	n
+water	base/format.h	/^namespace water$/;"	n
+water	base/logger/backend_logger.cpp	/^namespace water{$/;"	n	file:
+water	base/logger/backend_logger.h	/^namespace water {$/;"	n
+water	base/logger/log_buffer.h	/^namespace water {$/;"	n
+water	base/logger/log_file.cpp	/^namespace water{$/;"	n	file:
+water	base/logger/log_file.h	/^namespace water {$/;"	n
+water	base/logger/logger.cpp	/^namespace water {$/;"	n	file:
+water	base/logger/logger.h	/^namespace water{$/;"	n
+writableSize	net/socket_buffer.cpp	/^uint32_t SocketBuffer::writableSize()$/;"	f	class:SocketBuffer
+write	net/sock_poller.h	/^	bool write;$/;"	m	struct:walle::net::poll_event
+write	net/socket_buffer.cpp	/^uint32_t SocketBuffer::write(const char* data, uint32_t len)$/;"	f	class:SocketBuffer
+writeToBuf	net/socket.cpp	/^uint32_t Socket::writeToBuf(const char* buf, uint32_t len)$/;"	f	class:Socket
+writeto	base/logger/log_file.cpp	/^ssize_t LogFile::writeto(const char* msg, const size_t len)$/;"	f	class:water::LogFile
+~BackendLogger	base/logger/backend_logger.cpp	/^BackendLogger::~BackendLogger()$/;"	f	class:water::BackendLogger
+~DynArray	base/xmlparse/tinyxml2.h	/^    ~DynArray() {$/;"	f	class:tinyxml2::DynArray
+~LogBuffer	base/logger/log_buffer.h	/^    ~LogBuffer()$/;"	f	class:water::LogBuffer
+~LogFile	base/logger/log_file.cpp	/^LogFile::~LogFile()$/;"	f	class:water::LogFile
+~MemPool	base/xmlparse/tinyxml2.h	/^    virtual ~MemPool() {}$/;"	f	class:tinyxml2::MemPool
+~MemPoolT	base/xmlparse/tinyxml2.h	/^    ~MemPoolT() {$/;"	f	class:tinyxml2::MemPoolT
+~MyServer	example/server/server.cpp	/^    virtual ~MyServer() {}$/;"	f	class:MyServer
+~Socket	net/socket.cpp	/^Socket::~Socket()$/;"	f	class:Socket
+~SocketServer	net/socketserver.cpp	/^SocketServer::~SocketServer()$/;"	f	class:SocketServer
+~StrPair	base/xmlparse/tinyxml2.cpp	/^StrPair::~StrPair()$/;"	f	class:tinyxml2::StrPair
+~XMLAttribute	base/xmlparse/tinyxml2.h	/^    virtual ~XMLAttribute()	{}$/;"	f	class:tinyxml2::XMLAttribute
+~XMLComment	base/xmlparse/tinyxml2.cpp	/^XMLComment::~XMLComment()$/;"	f	class:tinyxml2::XMLComment
+~XMLDeclaration	base/xmlparse/tinyxml2.cpp	/^XMLDeclaration::~XMLDeclaration()$/;"	f	class:tinyxml2::XMLDeclaration
+~XMLDocument	base/xmlparse/tinyxml2.cpp	/^XMLDocument::~XMLDocument()$/;"	f	class:tinyxml2::XMLDocument
+~XMLElement	base/xmlparse/tinyxml2.cpp	/^XMLElement::~XMLElement()$/;"	f	class:tinyxml2::XMLElement
+~XMLNode	base/xmlparse/tinyxml2.cpp	/^XMLNode::~XMLNode()$/;"	f	class:tinyxml2::XMLNode
+~XMLPrinter	base/xmlparse/tinyxml2.h	/^    virtual ~XMLPrinter()	{}$/;"	f	class:tinyxml2::XMLPrinter
+~XMLText	base/xmlparse/tinyxml2.h	/^    virtual ~XMLText()												{}$/;"	f	class:tinyxml2::XMLText
+~XMLUnknown	base/xmlparse/tinyxml2.cpp	/^XMLUnknown::~XMLUnknown()$/;"	f	class:tinyxml2::XMLUnknown
+~XMLVisitor	base/xmlparse/tinyxml2.h	/^    virtual ~XMLVisitor() {}$/;"	f	class:tinyxml2::XMLVisitor

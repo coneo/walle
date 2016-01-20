@@ -110,3 +110,13 @@ void Socket::setPollErrorCallBack(PollCallBack cb)
 {
     pollErrorCallBack = cb;
 }
+
+uint32_t Socket::writeToBuf(const char* buf, uint32_t len)
+{
+    return m_recvBuf.write(buf, len);
+}
+
+uint32_t Socket::readFromBuf(char* buf, uint32_t maxlen)
+{
+    return m_recvBuf.read(buf, maxlen);
+}

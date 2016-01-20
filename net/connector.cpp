@@ -16,7 +16,10 @@ Connection* Connector::connect()
     if (new_con)
     {
         if (new_con->socket().connect(&m_endpoint) == -1)
+        {
+            delete new_con;
             return NULL;
+        }
     }
 
     return new_con;

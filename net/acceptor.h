@@ -15,13 +15,14 @@ namespace walle{
 namespace net{
 
 class Poller;
+class SocketServer;
 
 class Acceptor
 {
 public:
     Acceptor();
 
-    bool init(Poller* poller, uint16_t port);
+    bool init(SocketServer* server, Poller* poller, uint16_t port);
 
     void accept();
 
@@ -29,6 +30,8 @@ private:
     Socket m_socket;
 
     Poller* m_poller = nullptr;
+
+    SocketServer* m_server = nullptr;
 };
 
 }}

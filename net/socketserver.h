@@ -16,11 +16,21 @@ class SocketServer
 public:
     SocketServer();
 
+    virtual ~SocketServer();
+
     bool init(uint16_t port);
 
     void run();
 
     void final();
+
+    bool addConnection(Connection* con);
+
+    void removeConnection(const Connection* con);
+
+protected:
+
+    virtual void msgParse();
 
 private:
     typedef std::map<int32_t, Connection*> ConnectionMap;

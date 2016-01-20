@@ -41,12 +41,13 @@ public:
 
     int32_t recv(void* buf, int32_t bufLen);
 
+    uint32_t writeToBuf(const char* buf, uint32_t len);
+    uint32_t readFromBuf(char* buf, uint32_t maxlen);
+
     void setReuseAddr(bool on);
     bool isReuseAddr() const;
 
     void defaultReadCallBack();
-
-    void readPacket(char* data, uint32_t len);
 
 public:
 

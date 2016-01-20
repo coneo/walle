@@ -1,9 +1,8 @@
 #ifndef NET_SOCKET_BUFFER_H
 #define NET_SOCKET_BUFFER_H
 
-//#include "type.h"
+#include "base/type.h"
 #include <vector>
-#include <stdint.h>
 
 namespace walle{
 namespace net{

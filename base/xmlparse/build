@@ -1,0 +1,1 @@
+g++ -std=c++11 xmltest.cpp tinyxml2.cpp xmlparse.cpp

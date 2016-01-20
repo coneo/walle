@@ -1,0 +1,11 @@
+1. 线程替换为C++11 thread
+2. 同步原语替换为C++11 mutex, cond
+3. 写文件接口替换为系统接口,copen -> open , cwrite -> write
+4. 多重缓冲优化
+5. 日志文件的自动回滚，按照文件大小或者时间
+6. 支持用户自定义LOG LEVEL
+7. 需要配置的地方: 文件名，写日志的频率
+8. 系统崩溃处理，中途宕机处理
+9. 支持multi-process写同一文件
+10. printf风格，类型安全
+11.支持输出到指定流： file, standard output
