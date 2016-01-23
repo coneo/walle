@@ -1,4 +1,4 @@
-#include "../../base/timestamp.h"
+#include "../timestamp.h"
 #include <iostream>
 
 using namespace walle::base;

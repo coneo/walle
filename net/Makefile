@@ -19,16 +19,6 @@ obj/%.o: %.cpp
 	$(CXX) $(CXX_FLAGS) $(INC_FLAGS) -c $< -o $@
 
 
-#%.d: %.cpp
-#	@#set -x ; 
-#	@set -e ; \
-#	rm -f $@; \
-#	$(CXX) -MM $(CXX_FLAGS) $< > $@.$$$$;  \
-#	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@;  \
-#	rm -f $@.$$$$
-
-#-include $(OBJECTS:.o=.d)
-
 test:
 	@make -C example;
 
@@ -36,7 +26,7 @@ clean:
 	-rm -f *.d *.d.*
 	-rm -rf obj/ *.d *.d.*
 	-rm $(TARGET)
-	@make clean -C example
+	make clean -C example
 
 ctags:
 	@ctags -R
