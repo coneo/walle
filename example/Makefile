@@ -1,4 +1,4 @@
-subdir = server client
+subdir = server client timestamp
 
 test:
 	@for dir in $(subdir);\
