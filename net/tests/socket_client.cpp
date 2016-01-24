@@ -1,8 +1,8 @@
 //#include "net.h"
-#include "connector.h"
-#include "connection.h"
-#include "socket.h"
-#include "sock_op.h"
+#include "net/connector.h"
+#include "net/connection.h"
+#include "net/socket.h"
+#include "net/sock_op.h"
 #include <stdio.h>
 
 using namespace walle;

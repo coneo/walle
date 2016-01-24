@@ -1,6 +1,6 @@
 //#include "net.h"
-#include "socket.h"
-#include "sock_op.h"
+#include "net/socket.h"
+#include "net/sock_op.h"
 #include <stdio.h>
 
 using namespace walle;

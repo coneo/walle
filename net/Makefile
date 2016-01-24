@@ -20,13 +20,13 @@ obj/%.o: %.cpp
 
 
 test:
-	@make -C example;
+	@make -C tests;
 
 clean:
 	-rm -f *.d *.d.*
 	-rm -rf obj/ *.d *.d.*
 	-rm $(TARGET)
-	make clean -C example
+	make clean -C tests
 
 ctags:
 	@ctags -R
