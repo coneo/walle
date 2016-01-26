@@ -3,7 +3,8 @@
 #include <time.h>
 #include <cassert>
 
-namespace water{
+namespace walle{
+namespace base{
 
 BackendLogger::BackendLogger(const std::string filename)
     : m_filename(filename),
@@ -124,4 +125,4 @@ void BackendLogger::start()
     m_running = true;
 }
 
-} //namespace water
+}} //namespace walle

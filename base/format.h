@@ -5,13 +5,13 @@
  *
  * Description:  类型安全的字符串格式化字符串库, 实测gcc O3优化下比stringstream快约1.5-3倍
  */
-#ifndef WATER_BASE_FORMAT_HPP
-#define WATER_BASE_FORMAT_HPP
+#ifndef WALLE_BASE_FORMAT_HPP
+#define WALLE_BASE_FORMAT_HPP
 
 #include <string>
 
-namespace water
-{
+namespace walle{
+namespace base{
 
 //可以通过appendToString转为字符串的类
 class IFormartAble
@@ -116,6 +116,6 @@ std::string format(const std::string& formatStr, const Args&... args)
     return std::move(ret);
 }
 
-}
+}}
 
 #endif //WATER_BASE_FORMAT_HPP

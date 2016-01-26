@@ -1,12 +1,13 @@
-#include "logger.h"
+#include "front_logger.h"
 #include "backend_logger.h"
+#include "../logger.h"
 #include <unistd.h>
 #include <iostream>
 #include <functional>
 #include <chrono>
 #include <memory>
 
-using namespace water;
+using namespace walle::base;
 
 int32_t g_total;
 FILE* g_file;
@@ -64,10 +65,13 @@ void bench(bool flag=false)
 
 int main(int argc, char**argv)
 {
+    LoggerModule::getme().init("./game.log");
+    /*
     using namespace std::placeholders;
     bkLogger.reset(new BackendLogger("./game.log"));
     bkLogger->start();
     gLogger.setAppendCallback(std::bind(dumpfunc,_1, _2));
+    */
     LOG_DEBUG("int={some int},str={your name}", 25,"hello");
     LOG_DEBUG("hello logging");
 
@@ -77,8 +81,8 @@ int main(int argc, char**argv)
     stFoo foo;
     LOG_TRACE("int={},float={}, {foo data}", a, f, foo);
 
-    bool flag = (argc>1)?true:false;
-    bench(flag);
+    //bool flag = (argc>1)?true:false;
+    //bench(flag);
 
     /*
     char buffer[64*1024];
@@ -91,5 +95,5 @@ int main(int argc, char**argv)
     */
 
     sleep(8);
-    bkLogger->stop();
+    //bkLogger->stop();
 }

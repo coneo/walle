@@ -14,7 +14,8 @@
 #include <stdexcept>
 #include <time.h>
 
-namespace water{
+namespace walle{
+namespace base{
 
 typedef std::stringstream LogStream; //FIXME: move to a better one
 extern thread_local LogStream m_stream;
@@ -67,6 +68,9 @@ private:
     AppendCallback m_appendcb;
 };
 
+}}
+
+#if 0
 
 #define LOG_DEBUG(...) \
     do{\
@@ -88,8 +92,8 @@ private:
         gLogger.log(LogLevel::LL_ERROR, __FILE__,__LINE__, __VA_ARGS__); \
     }while(0)
 
-}
 
-extern water::Logger gLogger;
+extern walle::base::Logger gLogger;
+#endif
 
-#endif //#define WATER_BASE_LOGGER_HPP
+#endif //#define WALLE_BASE_LOGGER_HPP

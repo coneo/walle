@@ -1,11 +1,12 @@
-#ifndef WATER_BASE_LOG_FILE_HPP
-#define WATER_BASE_LOG_FILE_HPP
+#ifndef WALLE_BASE_LOG_FILE_HPP
+#define WALLE_BASE_LOG_FILE_HPP
 
 #include <string>
 #include <fcntl.h>
 #include <condition_variable>
 
-namespace water {
+namespace walle {
+namespace base{
 
 class LogFile
 {
@@ -39,7 +40,7 @@ private:
     std::condition_variable m_cond;
     int32_t m_logHour;
 };
-}
+}}
 
-#endif //#define WATER_BASE_LOG_FILE_HPP
+#endif //#define WALLE_BASE_LOG_FILE_HPP
 

@@ -1,5 +1,5 @@
-#ifndef WATER_BASE_BACKEND_LOGGER_HPP
-#define WATER_BASE_BACKEND_LOGGER_HPP
+#ifndef WALLE_BASE_BACKEND_LOGGER_HPP
+#define WALLE_BASE_BACKEND_LOGGER_HPP
 
 #include "log_buffer.h"
 #include <vector>
@@ -9,7 +9,8 @@
 #include <chrono>
 #include <pthread.h>
 
-namespace water {
+namespace walle {
+namespace base{
 
 class BackendLogger
 {
@@ -46,5 +47,5 @@ private:
     std::condition_variable m_cond;
 };
 
-}
-#endif //#define WATER_BASE_BACKEND_LOGGER_HPP
+}}
+#endif //#define WALLE_BASE_BACKEND_LOGGER_HPP

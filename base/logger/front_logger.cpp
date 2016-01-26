@@ -1,13 +1,14 @@
-#include "logger.h"
+#include "front_logger.h"
 
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
 #include <assert.h>
 
-water::Logger gLogger;
+walle::base::Logger gLogger;
 
-namespace water {
+namespace walle {
+namespace base{
 
 /*
 void Logger::log(LogLevel level, char* format, ...)
@@ -78,4 +79,4 @@ void Logger::formatTime()
     m_stream << std::string(t_time);
 }
 
-} //namespace water
+}} //namespace walle::base

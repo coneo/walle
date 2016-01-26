@@ -1,10 +1,11 @@
-#ifndef WATER_BASE_LOG_BUFFER_HPP
-#define WATER_BASE_LOG_BUFFER_HPP
+#ifndef WALLE_BASE_LOG_BUFFER_HPP
+#define WALLE_BASE_LOG_BUFFER_HPP
 
 #include <stdint.h>
 #include <string.h>
 
-namespace water {
+namespace walle {
+namespace base{
 
 const uint32_t BIG_BUFFER_SIZE = 4000 * 1000;
 
@@ -47,6 +48,6 @@ private:
     char* m_cur;
     uint32_t m_size;
 };
-}
-#endif //#define WATER_BASE_LOG_BUFFER_HPP
+}}
+#endif //#define WALLE_BASE_LOG_BUFFER_HPP
 

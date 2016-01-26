@@ -4,7 +4,8 @@
 #include <unistd.h>
 #include <errno.h>
 
-namespace water{
+namespace walle{
+namespace base{
 
 LogFile::LogFile(const std::string filename)
     : m_filename(filename),
@@ -111,4 +112,4 @@ tm LogFile::timeNow()
     return vtm;
 }
 
-} //namespace water
+}} //namespace walle

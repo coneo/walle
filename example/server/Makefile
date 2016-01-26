@@ -2,7 +2,7 @@ CXX = g++
 CXX_DEPS = -DTEST_SERVER
 CXX_FLAGS= -std=c++11 -g -fPIC
 INC_FLAGS= -I../../
-CXX_LIBS = $(CXX_DEPS) -lpthread -lrt -L../../net -lnet
+CXX_LIBS = $(CXX_DEPS) -lpthread -lrt -L../../net -lnet -L../../base -lbase
 
 TESTS = server
 

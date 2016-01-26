@@ -12,7 +12,7 @@ all: $(TESTS)
 $(TESTS):
 	g++ $(INC) $(CXXFLAGS) -o $@ $(filter %.cpp,$^) -lpthread -lrt
 
-test_Logger: test_Logger.cpp ../logger.cpp ../backend_logger.cpp ../log_file.cpp
+test_Logger: test_Logger.cpp ../front_logger.cpp ../backend_logger.cpp ../log_file.cpp
 
 test_WriteFile: test_WriteFile.cpp ../log_file.cpp
 

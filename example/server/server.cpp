@@ -1,8 +1,10 @@
 #include "net/socketserver.h"
 #include "base/cmd_dispatcher.h"
+#include "base/logger.h"
 #include "cmd/testcmd.h"
 #include <iostream>
 
+using namespace walle::base;
 
 static const uint16_t SERVER_PORT = 9091;
 
@@ -29,6 +31,11 @@ bool on_client_test(const walle::base::BaseCmd* cmd, uint32_t len)
 
 int main(int argc, char** argv)
 {
+    //先初始化日志
+    LoggerModule::getme().init("/home/hxq/log/game.log");
+
+    LOG_TRACE("hello shok");
+
     using namespace std::placeholders;
 
     MyServer server;

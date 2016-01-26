@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-using namespace water;
+using namespace walle::base;
 using namespace std;
 
 void formatStr()
